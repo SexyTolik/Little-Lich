@@ -99,6 +99,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -724,6 +725,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      buttons_battle_24: 6316023401544474037
+      buttons_battle_10: -2815182049847840312
+      buttons_battle_12: 96156224353998904
+      buttons_battle_11: 4614195841743218167
+      buttons_battle_17: -7243189869128751848
+      buttons_battle_2: -5398912771761298731
+      buttons_battle_8: 6122686836082426239
+      buttons_battle_16: -8552903563492105253
+      buttons_battle_23: -397851431447877148
+      buttons_battle_9: 5199987029578598653
+      buttons_battle_15: 7957628813926254026
+      buttons_battle_14: -7329259324622047636
+      buttons_battle_21: -2724267399520607381
+      buttons_battle_13: -6474214219405913881
+      buttons_battle_4: 2015357219103514506
+      buttons_battle_18: 1361655602024456958
+      buttons_battle_22: -6021754041151258640
+      buttons_battle_20: -8271032683769948601
+      buttons_battle_0: -413824587752295105
+      buttons_battle_6: 5049657176555505992
+      buttons_battle_1: 3177444023422087464
+      buttons_battle_3: -253508665652592255
+      buttons_battle_5: -2989406552185130356
+      buttons_battle_7: 3797734426250680414
+      buttons_battle_19: 5833486409527999927
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

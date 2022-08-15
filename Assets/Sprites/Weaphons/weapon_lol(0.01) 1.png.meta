@@ -90,6 +90,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -652,6 +653,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Claw1: 6150196753999625321
+      MageStaff7: -3667016251596770095
+      pickaxe: -7766097000288046491
+      armorskeletonfist2: 8883776498182541497
+      Claw2: -1312489608077010177
+      bigguyfist2: -680287745773896944
+      MageStaff8: -2950210455370695666
+      pitchfork: -3277613698276154992
+      dagger1: 392641248757704034
+      bigguyfist1: -2642257232943977065
+      dagger2: 6161627879209552326
+      MageStaff5: 2532455038547527021
+      MageStaff6: -8753163078424442088
+      MageStaff2: -1591225309304029443
+      Sword: 3555209828287225862
+      zombiefist1: 6000046491465805605
+      MageStaff3: -8690469154731263382
+      MageStaff1: -3767462342426186798
+      zombiefist2: 8609756166510931974
+      armorskeletonfist1: 5005053104013726105
+      Bow: -7684868808126345533
+      MageStaff4: -5205023360187381819
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

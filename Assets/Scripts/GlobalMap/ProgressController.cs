@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ProgressController : MonoBehaviour
 {
+    public bool CompanyInProgress = false; 
+
     // Start is called before the first frame update
     void Start()
     {

@@ -111,6 +111,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -820,6 +821,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      floorsAndObjForBums_23: -5887219081979333072
+      floorsAndObjForBums_15: -6160889181084213939
+      floorsAndObjForBums_26: -5288280315128282779
+      floorsAndObjForBums_25: 1204259722106858729
+      floorsAndObjForBums_22: -2237228933673402449
+      floorsAndObjForBums_1: 7070561664204243605
+      floorsAndObjForBums_5: -7850656175085287369
+      floorsAndObjForBums_20: 1184296174456133557
+      floorsAndObjForBums_11: 3077682406869647404
+      floorsAndObjForBums_17: 5013144609121557505
+      floorsAndObjForBums_13: -5884523524778569718
+      floorsAndObjForBums_2: -1251088447039788414
+      floorsAndObjForBums_10: -307716217170698809
+      floorsAndObjForBums_14: 3953354067028111671
+      floorsAndObjForBums_8: -6785163578071061765
+      floorsAndObjForBums_19: 5684791646061350872
+      floorsAndObjForBums_7: 8813991445691238574
+      floorsAndObjForBums_18: 7175241120253247124
+      floorsAndObjForBums_21: 925992012611867774
+      floorsAndObjForBums_0: -718647839239713183
+      floorsAndObjForBums_12: 6161661566972131253
+      floorsAndObjForBums_3: -1880033014943705322
+      floorsAndObjForBums_9: 1087194526198312949
+      floorsAndObjForBums_6: 8988694222416513445
+      floorsAndObjForBums_4: 2181312335168389407
+      floorsAndObjForBums_24: 2692622543579306368
+      floorsAndObjForBums_28: 2197185643030998814
+      floorsAndObjForBums_16: -6894959805357352854
+      floorsAndObjForBums_27: -7372435937930447512
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

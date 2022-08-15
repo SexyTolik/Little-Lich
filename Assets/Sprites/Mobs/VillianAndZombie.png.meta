@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -892,6 +893,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Villian_l3: 4883473072506627998
+      Zombie_f2: 6276406070459231604
+      Zombie_f1: -4127652861164134687
+      Villian_r1: 3538522729666494672
+      Zombie_r3: 755071706787998640
+      Villian_r3: -1865926151419338869
+      Villian_l2: -3287461403535061659
+      Villian_r4: -997894492868730012
+      Zombie_r1: -4583757714908015212
+      Villian_r2: 4704832257148272094
+      Zombie_b4: -1604090635056561031
+      Zombie_b1: 3731730137894912555
+      Villian_l1: -3606297810090799948
+      Zombie_f3: 2286923016469886354
+      Villian_b3: 5890642876588350684
+      Zombie_r2: 4881689511150935916
+      Villian_f4: 6805589659335383698
+      Zombie_r4: -1544741968473172078
+      Zombie_b2: 8271378296614884984
+      Zombie_b3: 3752993118692002224
+      Zombie_l4: 4411712561392709260
+      Villian_b2: 5677133824725358303
+      Zombie_l2: -724625276593973541
+      Villian_f3: -1763548602405089717
+      Villian_f1: 5399795754706187167
+      Villian_f2: 7324728759309605774
+      Villian_l4: -1697865398653625007
+      Villian_b1: -4502818304311850500
+      Zombie_f4: -8320554302567674719
+      Zombie_l1: -2826473834049092030
+      Zombie_l3: -8033098536311973459
+      Villian_b4: -2357334706168892682
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
