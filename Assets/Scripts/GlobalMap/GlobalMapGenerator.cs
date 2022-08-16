@@ -15,13 +15,11 @@ public class GlobalMapGenerator : MonoBehaviour
 
 
     private TileBase[] allTiles;
-    BoundsInt mapBounds;
-    private ProgressController progContr;
+    private BoundsInt mapBounds;
+    private List<Vector3> LocationsCords = new List<Vector3>();
     private GlobalMapSaver mapSaver;
-    public List<Vector3> LocationsCords = new List<Vector3>();
     void Start()
     {
-        progContr = GetComponent<ProgressController>();
         mapSaver = GetComponent<GlobalMapSaver>();
         mapBounds = tilemap.cellBounds;
         allTiles = tilemap.GetTilesBlock(mapBounds);
@@ -31,7 +29,7 @@ public class GlobalMapGenerator : MonoBehaviour
 
     private void GenerateGrid()
     {
-        if (progContr.CompanyInProgress)
+        if (mapSaver.CheckCompanyProgress())
         {
             if (mapSaver.loadMap())
             {
@@ -44,7 +42,7 @@ public class GlobalMapGenerator : MonoBehaviour
             else
             {
                 Debug.Log("Сохранение повреждено или отсутствует");
-                progContr.CompanyInProgress = false;
+                mapSaver.SetCompanyProgress(false);
                 GenerateGrid();
             }
         }
@@ -74,7 +72,7 @@ public class GlobalMapGenerator : MonoBehaviour
                 }
             }
             mapSaver.SaveMap(LocationsCords);
-            progContr.CompanyInProgress = true;
+            mapSaver.SetCompanyProgress(true);
         }
     }
     
