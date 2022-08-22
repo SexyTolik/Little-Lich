@@ -16,14 +16,20 @@ public class GlobalMapGenerator : MonoBehaviour
 
     private TileBase[] allTiles;
     private BoundsInt mapBounds;
-    private List<Vector3> LocationsCords = new List<Vector3>();
+    private List<LocParams> LocationsInstanses = new List<LocParams>();
     private GlobalMapSaver mapSaver;
+    private List<string> BattleMapNames = new List<string>();
     void Start()
     {
-        mapSaver = GetComponent<GlobalMapSaver>();
+        mapSaver = GlobalMapSaver.instance;
         mapBounds = tilemap.cellBounds;
         allTiles = tilemap.GetTilesBlock(mapBounds);
 
+        Object[] locs = Resources.LoadAll("Locations");
+        foreach (Object loc in locs)
+        {
+            BattleMapNames.Add(loc.name);
+        }
         GenerateGrid();
     }
 
@@ -33,9 +39,12 @@ public class GlobalMapGenerator : MonoBehaviour
         {
             if (mapSaver.loadMap())
             {
-                foreach(Vector3 cord in mapSaver.save.VillageCords)
+                foreach(string loc in mapSaver.save.LocationsData)
                 {
-                    Instantiate(Locations[0], cord, Quaternion.identity);
+                    LocParams lpar = JsonUtility.FromJson<LocParams>(loc);
+                   GameObject location = Instantiate(Locations[0], lpar.LocPos, Quaternion.identity);
+                   location.GetComponent<LocationController>().Params.locationComplite = lpar.locationComplite;
+                   location.GetComponent<LocationController>().locNames = BattleMapNames;
                 }
                 Debug.Log("Карта загружена");
             }
@@ -61,8 +70,9 @@ public class GlobalMapGenerator : MonoBehaviour
                         {
                             if(Random.Range(0,100) <= spawnChanse)
                             {
-                                Instantiate(Locations[0], new Vector3(x, y), Quaternion.identity);
-                                LocationsCords.Add(new Vector3(x, y));
+                                GameObject loc = Instantiate(Locations[0], new Vector3(x, y), Quaternion.identity);
+                                LocationsInstanses.Add(loc.GetComponent<LocationController>().Params);
+                                loc.GetComponent<LocationController>().locNames = BattleMapNames;
                                 currLocsCount++;
                                 spawnChanse = 5;
                             }
@@ -71,7 +81,7 @@ public class GlobalMapGenerator : MonoBehaviour
                     }
                 }
             }
-            mapSaver.SaveMap(LocationsCords);
+            mapSaver.SaveNewMap(LocationsInstanses);
             mapSaver.SetCompanyProgress(true);
         }
     }

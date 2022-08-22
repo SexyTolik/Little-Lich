@@ -8,4 +8,9 @@ public class DebugMenu : MonoBehaviour
     {
         SceneManager.LoadScene(sceneNum);
     }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

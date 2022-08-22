@@ -5,11 +5,17 @@ using UnityEngine;
 public class BadGuyCounter : MonoBehaviour
 {
     bool IsInfinityArena = false;
+    bool IsBattleMap = false;
     private void Start()
     {
         if(UnitSpawner.instance != null)
         {
             IsInfinityArena = true;
+        }
+
+        if(KillEnemyCount.instance != null)
+        {
+            IsBattleMap = true;
         }
 
         if (IsInfinityArena)
@@ -22,7 +28,17 @@ public class BadGuyCounter : MonoBehaviour
     void OnDestroy()
     {
         if (!this.gameObject.scene.isLoaded) return;
-        UnitSpawner.instance.TotalMobs--;
-        UnitSpawner.instance.score += Random.Range(1,5);
+        if (IsInfinityArena)
+        {
+            UnitSpawner.instance.TotalMobs--;
+            UnitSpawner.instance.score += Random.Range(1, 5);
+        }
+
+        if (IsBattleMap)
+        {
+            KillEnemyCount.instance.AddKill();
+        }
+
+
     }
 }
