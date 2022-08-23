@@ -36,5 +36,6 @@ public class RangeWeapon : Iweapon
         GameObject proj = Instantiate(Projectile, transform.position, transform.rotation);
         proj.transform.right = dir.lastDir;
         proj.GetComponent<Rigidbody2D>().velocity = dir.lastDir.normalized * ProjtileSpeed;
+        IsAttacking = false;
     }
 }

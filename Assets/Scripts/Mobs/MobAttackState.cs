@@ -33,6 +33,14 @@ public class MobAttackState : BaseMobState
     }
     public override void UpdateLogic()
     {
+        if(controller.Target == null)
+        {
+            if (IsAttack)
+            {
+                controller.StopCoroutine(AttackCor);
+            }
+            controller.ChangeCurrState<MobRandomMoveState>();
+        }
         int closeOverlaps = Physics2D.OverlapCircle(controller.transform.position, controller.AttakRange, filter, InAttackRangeOverlaps);
         if (closeOverlaps > 0 && controller.Target.GetComponent<Collider2D>() == InAttackRangeOverlaps[0])
         {
