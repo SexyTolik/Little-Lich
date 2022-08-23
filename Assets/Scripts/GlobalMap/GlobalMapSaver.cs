@@ -5,11 +5,22 @@ using System.IO;
 
 public class GlobalMapSaver : MonoBehaviour
 {
+    public static GlobalMapSaver instance;
+
     public GameSave save = new GameSave();
     private string path;
-
     void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+        DontDestroyOnLoad(this);
+
 #if !UNITY_EDITOR
         path = Path.Combine(Application.persistentDataPath, "Save.json");
 #else
@@ -31,10 +42,26 @@ public class GlobalMapSaver : MonoBehaviour
         }
     }
 
-    public void SaveMap(List<Vector3> cords)
+    public void SaveNewMap(List<LocParams> locs)
     {
-        save.VillageCords = cords;
+        save.LocationsParametrs = locs;
         save.CompanyInProgress = true;
+        save.LocationsData = new List<string>();
+        
+        foreach (LocParams l in locs)
+        {
+            save.LocationsData.Add(JsonUtility.ToJson(l));
+        }
+
+        File.WriteAllText(path, JsonUtility.ToJson(save));
+    }
+
+    public void ResaveMap()
+    {
+        foreach (LocParams l in save.LocationsParametrs)
+        {
+            save.LocationsData.Add(JsonUtility.ToJson(l));
+        }
         File.WriteAllText(path, JsonUtility.ToJson(save));
     }
 
@@ -61,6 +88,7 @@ public class GlobalMapSaver : MonoBehaviour
 [SerializeField]
 public class GameSave
 {
-    public List<Vector3> VillageCords;
+    public List<LocParams> LocationsParametrs;
+    public List<string> LocationsData;
     public bool CompanyInProgress;
 }

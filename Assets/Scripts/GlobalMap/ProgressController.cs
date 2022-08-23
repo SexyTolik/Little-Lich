@@ -5,13 +5,26 @@ using System.IO;
 
 public class ProgressController : MonoBehaviour
 {
+    public static ProgressController instance;
+
+
     public bool CompanyInProgress = false;
     private string savePath;
 
+    public LocParams CurLoc;
+
     private GlobalMapSaver mapSaver;
-    // Start is called before the first frame update
     void Awake()
     {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+        DontDestroyOnLoad(this);
 #if !UNITY_EDITOR
         savePath = Path.Combine(Application.persistentDataPath, "Save.json");
 #else
@@ -24,8 +37,15 @@ public class ProgressController : MonoBehaviour
             CompanyInProgress = save.CompanyInProgress;
         }
 
-        mapSaver = GetComponent<GlobalMapSaver>();
+        mapSaver = GlobalMapSaver.instance;
     }
     
-    
+    public void MapComplite()
+    {
+        CurLoc.locationComplite = true;
+        Debug.Log("Карта пройдена" + CurLoc.locationComplite);
+        mapSaver.ResaveMap();
+        Debug.Log("Пройденая карта записалась как " + mapSaver.save.LocationsData);
+        CurLoc = null;
+    }
 }
