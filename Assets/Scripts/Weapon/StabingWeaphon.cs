@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class StabingWeaphon : Iweapon
 {
-    public bool IsAttacking = false;
     public AttakZoneController attakZone; // устанавливается в едиторе
-
     private Animator anim;
    // private Collider2D atZone;
 

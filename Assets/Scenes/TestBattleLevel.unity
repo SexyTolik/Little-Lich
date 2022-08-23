@@ -19807,6 +19807,7 @@ MonoBehaviour:
   - {fileID: 2070883901}
   UnitPrefabs:
   - {fileID: 7349288978164977550, guid: 76ff606747c596643bcbb398e667f60c, type: 3}
+  - {fileID: 6764923351551935372, guid: 279dc71b2d46bd24a85d06f12c3bc3f5, type: 3}
   TotalMobs: 0
   MaxMobs: 15
   points: {fileID: 642419909}

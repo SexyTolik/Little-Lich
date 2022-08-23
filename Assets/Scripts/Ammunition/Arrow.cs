@@ -5,7 +5,6 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     public float Dmg;
-    public float ExpRadius = 1f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,22 +12,17 @@ public class Arrow : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.GetComponent<HeathBeh>() != null && (collision.CompareTag("Enemy") || collision.CompareTag("Friend")))
+        if (collision.GetComponent<HeathBeh>() != null && (collision.CompareTag("Player") || collision.CompareTag("Friend")))
         {
-//            Collider2D[] hitObj = Physics2D.OverlapCircleAll(transform.position, ExpRadius);
-            Collider2D hitObj = Physics2D.OverlapPoint(transform.position);
+            Collider2D[] hitObj = Physics2D.OverlapCircleAll(transform.position, 1f);
 
-//            foreach (Collider2D col in hitObj)
-//            {
-//                if (col.GetComponent<HeathBeh>() != null)
-//                {
-//                    if (col.CompareTag("Enemy")) { col.GetComponent<HeathBeh>().Health = Dmg; }
-//                    else if (col.CompareTag("Friend")) { col.GetComponent<HeathBeh>().AddHealth(Dmg); }
-//                }
-//            }
-            if (hitObj.GetComponent<HeathBeh>() != null)
+            foreach(Collider2D col in hitObj)
             {
-                if (hitObj.CompareTag("Enemy")) { hitObj.GetComponent<HeathBeh>().Health = Dmg; }
+                if(col.GetComponent<HeathBeh>() != null)
+                {
+                    if (col.CompareTag("Player")) { col.GetComponent<HeathBeh>().Health = Dmg;}
+                    else if (col.CompareTag("Friend")) { col.GetComponent<HeathBeh>().Health = Dmg; }
+                }
             }
             Destroy(gameObject);
         }

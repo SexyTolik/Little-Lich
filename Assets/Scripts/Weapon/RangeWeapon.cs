@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RangeWeapon : Iweapon
 {
-    public bool IsAttacking = false;
     public GameObject Projectile;
     public float ProjtileSpeed = 10;
     private float DeleyToSpawnProjectile = 1f;

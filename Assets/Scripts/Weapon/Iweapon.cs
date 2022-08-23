@@ -6,6 +6,7 @@ public abstract class Iweapon : MonoBehaviour // Задел на будущее, вдруг мне в г
 {
     public float Dmg;
     public float AttackDelay;
+    public bool IsAttacking = false;
     public virtual void Attack()
     {
 
