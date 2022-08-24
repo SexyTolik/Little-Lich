@@ -39,14 +39,17 @@ public class GlobalMapGenerator : MonoBehaviour
         {
             if (mapSaver.loadMap())
             {
+                
                 foreach(string loc in mapSaver.save.LocationsData)
                 {
                     LocParams lpar = JsonUtility.FromJson<LocParams>(loc);
                    GameObject location = Instantiate(Locations[0], lpar.LocPos, Quaternion.identity);
                    location.GetComponent<LocationController>().Params.locationComplite = lpar.locationComplite;
                    location.GetComponent<LocationController>().locNames = BattleMapNames;
+                    LocationsInstanses.Add(location.GetComponent<LocationController>().Params);
                 }
                 Debug.Log("Карта загружена");
+                mapSaver.save.LocationsParametrs = LocationsInstanses;
             }
             else
             {

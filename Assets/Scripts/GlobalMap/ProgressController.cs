@@ -45,5 +45,23 @@ public class ProgressController : MonoBehaviour
         GlobalMapSaver.instance.ResaveMap();
         Debug.Log("Пройденая карта записалась как " + GlobalMapSaver.instance.save.LocationsData);
         CurLoc = null;
+        CheckAllLocProgress();
+    }
+
+    public void CheckAllLocProgress()
+    {
+        var SavedLocParams = GlobalMapSaver.instance.save.LocationsParametrs;
+        foreach(var sav in SavedLocParams)
+        {
+            if (sav.locationComplite)
+            {
+
+            }
+            else
+            {
+                return;
+            }
+        }
+        Debug.Log("Все локации пройдены");
     }
 }

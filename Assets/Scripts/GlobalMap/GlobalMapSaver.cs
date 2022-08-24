@@ -58,6 +58,7 @@ public class GlobalMapSaver : MonoBehaviour
 
     public void ResaveMap()
     {
+        save.LocationsData.Clear();
         foreach (LocParams l in save.LocationsParametrs)
         {
             save.LocationsData.Add(JsonUtility.ToJson(l));
