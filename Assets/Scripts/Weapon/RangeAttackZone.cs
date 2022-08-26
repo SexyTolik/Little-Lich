@@ -38,6 +38,7 @@ public class RangeAttackZone : AttakZoneController
                 }
             }
             var projectileDirection = nearestCol.transform.position - transform.position;
+            dir.lastDir = projectileDirection;
 
             GameObject proj = Instantiate(curWeaphon.Projectile, transform.position, transform.rotation);
             proj.transform.right = projectileDirection;

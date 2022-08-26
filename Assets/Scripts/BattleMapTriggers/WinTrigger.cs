@@ -9,6 +9,7 @@ public class WinTrigger : MonoBehaviour
     public void MapWin()
     {
         WinScreen.SetActive(true);
+        CampainTimerController.instance.MapIsRun = false;
         ProgressController.instance.MapComplite();
     }
 }

@@ -42,6 +42,7 @@ public class ProgressController : MonoBehaviour
     {
         CurLoc.locationComplite = true;
         Debug.Log("Карта пройдена как" + CurLoc.locationComplite);
+        CampainTimerController.instance.SaveTime();
         GlobalMapSaver.instance.ResaveMap();
         Debug.Log("Пройденая карта записалась как " + GlobalMapSaver.instance.save.LocationsData);
         CurLoc = null;

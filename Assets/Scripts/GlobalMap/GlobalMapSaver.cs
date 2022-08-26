@@ -92,4 +92,5 @@ public class GameSave
     public List<LocParams> LocationsParametrs;
     public List<string> LocationsData;
     public bool CompanyInProgress;
+    public float PastTime;
 }

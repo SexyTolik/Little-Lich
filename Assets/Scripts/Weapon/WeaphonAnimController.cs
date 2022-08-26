@@ -17,17 +17,9 @@ public class WeaphonAnimController : MonoBehaviour
 
     void Update()
     {
-        // UnityEngine.Debug.Log(weaphon);
-        switch (weaphon)
-        {
-            case StabingWeaphon:
-                anim.SetFloat("Horizontal", dir.lastDir.x);
-                anim.SetFloat("Vertical", dir.lastDir.y);
-                anim.SetBool("IsAttaking", weaphon.IsAttacking);
-                break;
-            case RangeWeapon:
-                break;
-        }
+     anim.SetFloat("Horizontal", dir.lastDir.x);
+     anim.SetFloat("Vertical", dir.lastDir.y);
+     anim.SetBool("IsAttaking", weaphon.IsAttacking);
     }
 
 }

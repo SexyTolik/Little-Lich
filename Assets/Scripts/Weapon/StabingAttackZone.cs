@@ -28,7 +28,6 @@ public class StabingAttackZone : AttakZoneController
         int closeOverlaps = Physics2D.OverlapCircle(transform.position + (Vector3)capCol.offset, 2f, filter, InAttackRangeOverlaps);
         if (closeOverlaps > 0)
         {
-            Debug.Log("�����");
             Collider2D nearestCol = InAttackRangeOverlaps[0];
             ColliderDistance2D closestDist = Physics2D.Distance(nearestCol, capCol);
             foreach(var cols in InAttackRangeOverlaps)
