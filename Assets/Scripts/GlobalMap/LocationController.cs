@@ -35,6 +35,7 @@ public class LocationController : MonoBehaviour
         Debug.Log("Go in loc сработал");
         ProgressController.instance.CurLoc = Params;
         CampainTimerController.instance.MapIsRun = true;
+        GameObject.Find("Canvas").GetComponent<LoadingScreenHandler>().LoadScreen.SetActive(true);
         Debug.Log("текущая локация передала парамс в контроллер как " + ProgressController.instance.CurLoc.locationComplite);
         SceneManager.LoadScene(locNames[Random.Range(0, locNames.Count)]);
     }

@@ -69,6 +69,7 @@ public class GlobalMapSaver : MonoBehaviour
     public void SetCompanyProgress(bool state)
     {
        save.CompanyInProgress = state;
+        ProgressController.instance.CompanyInProgress = state;
        File.WriteAllText(path, JsonUtility.ToJson(save));
     }
 

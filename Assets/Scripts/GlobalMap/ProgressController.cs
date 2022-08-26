@@ -63,6 +63,7 @@ public class ProgressController : MonoBehaviour
                 return;
             }
         }
+        CompanyInProgress = false;
         Debug.Log("Все локации пройдены");
     }
 }

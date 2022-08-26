@@ -19,7 +19,7 @@ public class GlobalMapGenerator : MonoBehaviour
     private List<LocParams> LocationsInstanses = new List<LocParams>();
     private GlobalMapSaver mapSaver;
     private List<string> BattleMapNames = new List<string>();
-    void Start()
+    void Awake()
     {
         mapSaver = GlobalMapSaver.instance;
         mapBounds = tilemap.cellBounds;
@@ -86,6 +86,7 @@ public class GlobalMapGenerator : MonoBehaviour
             }
             mapSaver.SaveNewMap(LocationsInstanses);
             mapSaver.SetCompanyProgress(true);
+
         }
     }
     
