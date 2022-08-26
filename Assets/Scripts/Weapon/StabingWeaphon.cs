@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StabingWeaphon : Iweapon
 {
-    public AttakZoneController attakZone; // устанавливается в едиторе
+    public StabingAttackZone attakZone; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     private Animator anim;
    // private Collider2D atZone;
 

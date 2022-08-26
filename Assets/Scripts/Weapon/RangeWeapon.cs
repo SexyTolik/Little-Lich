@@ -5,26 +5,30 @@ using UnityEngine;
 public class RangeWeapon : Iweapon
 {
     public GameObject Projectile;
-    public float ProjtileSpeed = 10;
+    public float ProjtileSpeed = 6;
     private float DeleyToSpawnProjectile = 1f;
     private IDirection dir;
+    private MobController controller;
+    private float ProjectileAnimationDeley = 1f;
+    public RangeAttackZone attakZone;
+    // private SpriteRenderer spriteRenderer; 
 
     void Start()
     {
         dir = GetComponentInParent<IDirection>();
-//        Projectile = GetComponent<SimpleArrow>();
-//        Projectile = resources.load();
+        controller = GetComponentInParent<MobController>();
+        // spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
-    public override void Attack()
+    public override void Attack() 
     {
         if (!IsAttacking)
         {
             IsAttacking = true;
+            attakZone.CheckColls();
             StartCoroutine(SpawnProjectileDelay());
-        }
-    } 
-
+        }        
+    }
     public IEnumerator SpawnProjectileDelay()
     {
         float currDelay = DeleyToSpawnProjectile;
@@ -33,9 +37,6 @@ public class RangeWeapon : Iweapon
             currDelay -= 0.01f;
             yield return new WaitForSeconds(0.01f);
         }
-        GameObject proj = Instantiate(Projectile, transform.position, transform.rotation);
-        proj.transform.right = dir.lastDir;
-        proj.GetComponent<Rigidbody2D>().velocity = dir.lastDir.normalized * ProjtileSpeed;
         IsAttacking = false;
     }
 }
