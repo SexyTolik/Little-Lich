@@ -10,12 +10,12 @@ public class DeathBall : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gameObject.GetComponent<Collider2D>().IsTouchingLayers(LayerMask.GetMask("Obstacls")))
+      /*  if (gameObject.GetComponent<Collider2D>().IsTouchingLayers(LayerMask.GetMask("Obstacls")))
         {
             Instantiate(ExpEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
-        }
-        if(collision.GetComponent<HeathBeh>() != null && (collision.CompareTag("Enemy") || collision.CompareTag("Friend")))
+        } */
+        if(gameObject.GetComponent<Collider2D>().IsTouchingLayers(LayerMask.GetMask("Obstacls")) || collision.GetComponent<HeathBeh>() != null && (collision.CompareTag("Enemy") || collision.CompareTag("Friend")))
         {
             Collider2D[] hitObj = Physics2D.OverlapCircleAll(transform.position, ExpRadius);
 

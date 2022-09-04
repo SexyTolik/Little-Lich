@@ -24,6 +24,7 @@ public class Arrow : MonoBehaviour
                     else if (col.CompareTag("Friend")) { col.GetComponent<HeathBeh>().Health = Dmg; }
                 }
             }
+            collision.GetComponent<Rigidbody2D>().AddForce(GetComponent<Rigidbody2D>().velocity, ForceMode2D.Impulse);
             Destroy(gameObject);
         }
 

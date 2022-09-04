@@ -6,12 +6,12 @@ using Pathfinding;
 
 public class MobController : MonoBehaviour
 {
-    [Header("Поля устанавливаемые в едиторе")]
+    [Header("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
 
     public GameObject Pointer;
     public MobData CurMob;
 
-    [Header("Свойства берущиеся из Data файла")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ Data пїЅпїЅпїЅпїЅпїЅ")]
     public RuntimeAnimatorController AnimController;
     public float MaxHealth;
     public float Speed;
@@ -20,7 +20,7 @@ public class MobController : MonoBehaviour
     public float AttakDamage;
     public float AttakDelay;
 
-    [Header("Поля устанавливаемые в рантайме")]
+    [Header("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
     public AIDestinationSetter Setter;
     public AIPath Aipath;
     public Iweapon currWeaphon;
@@ -91,7 +91,7 @@ public class MobController : MonoBehaviour
     private void Update()
     {
         currState.UpdateLogic();
-       // Debug.Log("Текущий стейт -> " + currState);
+       // Debug.Log("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -> " + currState);
 
     }
 

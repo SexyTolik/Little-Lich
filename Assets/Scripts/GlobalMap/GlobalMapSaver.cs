@@ -58,6 +58,7 @@ public class GlobalMapSaver : MonoBehaviour
 
     public void ResaveMap()
     {
+        save.LocationsData.Clear();
         foreach (LocParams l in save.LocationsParametrs)
         {
             save.LocationsData.Add(JsonUtility.ToJson(l));
@@ -68,6 +69,7 @@ public class GlobalMapSaver : MonoBehaviour
     public void SetCompanyProgress(bool state)
     {
        save.CompanyInProgress = state;
+        ProgressController.instance.CompanyInProgress = state;
        File.WriteAllText(path, JsonUtility.ToJson(save));
     }
 
@@ -91,4 +93,5 @@ public class GameSave
     public List<LocParams> LocationsParametrs;
     public List<string> LocationsData;
     public bool CompanyInProgress;
+    public float PastTime;
 }

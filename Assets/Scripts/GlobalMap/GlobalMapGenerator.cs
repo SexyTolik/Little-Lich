@@ -19,7 +19,7 @@ public class GlobalMapGenerator : MonoBehaviour
     private List<LocParams> LocationsInstanses = new List<LocParams>();
     private GlobalMapSaver mapSaver;
     private List<string> BattleMapNames = new List<string>();
-    void Start()
+    void Awake()
     {
         mapSaver = GlobalMapSaver.instance;
         mapBounds = tilemap.cellBounds;
@@ -39,14 +39,17 @@ public class GlobalMapGenerator : MonoBehaviour
         {
             if (mapSaver.loadMap())
             {
+                
                 foreach(string loc in mapSaver.save.LocationsData)
                 {
                     LocParams lpar = JsonUtility.FromJson<LocParams>(loc);
                    GameObject location = Instantiate(Locations[0], lpar.LocPos, Quaternion.identity);
                    location.GetComponent<LocationController>().Params.locationComplite = lpar.locationComplite;
                    location.GetComponent<LocationController>().locNames = BattleMapNames;
+                    LocationsInstanses.Add(location.GetComponent<LocationController>().Params);
                 }
                 Debug.Log("Карта загружена");
+                mapSaver.save.LocationsParametrs = LocationsInstanses;
             }
             else
             {
@@ -83,6 +86,7 @@ public class GlobalMapGenerator : MonoBehaviour
             }
             mapSaver.SaveNewMap(LocationsInstanses);
             mapSaver.SetCompanyProgress(true);
+
         }
     }
     

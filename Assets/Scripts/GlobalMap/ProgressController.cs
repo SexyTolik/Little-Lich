@@ -13,7 +13,6 @@ public class ProgressController : MonoBehaviour
 
     public LocParams CurLoc;
 
-    private GlobalMapSaver mapSaver;
     void Awake()
     {
         if(instance == null)
@@ -37,15 +36,34 @@ public class ProgressController : MonoBehaviour
             CompanyInProgress = save.CompanyInProgress;
         }
 
-        mapSaver = GlobalMapSaver.instance;
     }
     
     public void MapComplite()
     {
         CurLoc.locationComplite = true;
-        Debug.Log("Карта пройдена" + CurLoc.locationComplite);
-        mapSaver.ResaveMap();
-        Debug.Log("Пройденая карта записалась как " + mapSaver.save.LocationsData);
+        Debug.Log("Карта пройдена как" + CurLoc.locationComplite);
+        CampainTimerController.instance.SaveTime();
+        GlobalMapSaver.instance.ResaveMap();
+        Debug.Log("Пройденая карта записалась как " + GlobalMapSaver.instance.save.LocationsData);
         CurLoc = null;
+        CheckAllLocProgress();
+    }
+
+    public void CheckAllLocProgress()
+    {
+        var SavedLocParams = GlobalMapSaver.instance.save.LocationsParametrs;
+        foreach(var sav in SavedLocParams)
+        {
+            if (sav.locationComplite)
+            {
+
+            }
+            else
+            {
+                return;
+            }
+        }
+        CompanyInProgress = false;
+        Debug.Log("Все локации пройдены");
     }
 }
