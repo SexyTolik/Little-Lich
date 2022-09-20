@@ -18,4 +18,4 @@ MonoBehaviour:
   _VisionRange: 10
   _AttakRange: 5
   _AttakDamage: 5
-  _AttakDelay: 1
+  _AttakDelay: 0.3

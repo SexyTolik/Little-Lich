@@ -13,4 +13,9 @@ public class DebugMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void ResetCampainProg()
+    {
+        GlobalMapSaver.instance.SetCompanyProgress(false);
+    }
 }

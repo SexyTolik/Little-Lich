@@ -7,8 +7,14 @@ using System.IO;
 public class LocationController : MonoBehaviour
 {
     public LocParams Params = new LocParams();
-    public List<string> locNames = new List<string>();
+    public List<string> locNames = new List<string>(); // не используется
     public string LocParemetrs;
+
+    public Sprite DefeatIcon;
+    public int MinBuildIndex;
+    public int MaxBuildIndex;
+    public MapReward _MapReward;
+    public int LocTypeInt;
 
     void Awake()
     {
@@ -16,15 +22,30 @@ public class LocationController : MonoBehaviour
         {
             Params.LocPos = transform.position;
         }
+        LocParemetrs = JsonUtility.ToJson(Params);
+        Params.LocTypeNum = LocTypeInt;
 
+        switch (LocTypeInt)
+        {
+            case 0:
+                _MapReward = new VillageReward();
+                break;
+            case 1:
+                _MapReward = new FortressReward();
+                break;
+        }
+    }
+
+    private void Start()
+    {
         if (Params.locationComplite)
         {
             Debug.Log("location " + transform.position + "Is complite");
+            gameObject.GetComponent<SpriteRenderer>().sprite = DefeatIcon;
         }
 
-        LocParemetrs = JsonUtility.ToJson(Params);
-    }
 
+    }
     public void GoInLocation()
     {
         if (Params.locationComplite)
@@ -33,11 +54,12 @@ public class LocationController : MonoBehaviour
             return;
         }
         Debug.Log("Go in loc сработал");
-        ProgressController.instance.CurLoc = Params;
+        ProgressController.instance.CurLoc = this;
         CampainTimerController.instance.MapIsRun = true;
         GameObject.Find("Canvas").GetComponent<LoadingScreenHandler>().LoadScreen.SetActive(true);
-        Debug.Log("текущая локация передала парамс в контроллер как " + ProgressController.instance.CurLoc.locationComplite);
-        SceneManager.LoadScene(locNames[Random.Range(0, locNames.Count)]);
+        Debug.Log("текущая локация передала парамс в контроллер как " + ProgressController.instance.CurLoc.Params.locationComplite);
+        //SceneManager.LoadScene(locNames[Random.Range(0, locNames.Count)]);
+        SceneManager.LoadScene(Random.Range(MinBuildIndex, MaxBuildIndex));
     }
 
 }
@@ -46,4 +68,5 @@ public class LocParams
 {
     public bool locationComplite;
     public Vector3 LocPos;
+    public int LocTypeNum;
 }

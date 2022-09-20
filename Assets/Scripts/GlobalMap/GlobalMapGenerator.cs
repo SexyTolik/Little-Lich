@@ -10,7 +10,8 @@ public class GlobalMapGenerator : MonoBehaviour
     [Header("ќб€зательно установить значение в эдиторе")]
     public List<GameObject> Locations = new List<GameObject>(2); // здесь хран€тс€ префабы локаций, дл€ того чтобы не услож€ть код следует размещать префабы в пор€дке 0-деревн€,1-крепость,2-замок
     public int VillageCount = 5;
-    public int TargetLocationsCount = 5;
+    public int FortressCount = 3;
+    public int TargetLocationsCount = 8;
     public Tilemap tilemap;
 
 
@@ -19,15 +20,19 @@ public class GlobalMapGenerator : MonoBehaviour
     private List<LocParams> LocationsInstanses = new List<LocParams>();
     private GlobalMapSaver mapSaver;
     private List<string> BattleMapNames = new List<string>();
+
+    public bool[,] placedLocs;
     void Awake()
     {
         mapSaver = GlobalMapSaver.instance;
         mapBounds = tilemap.cellBounds;
         allTiles = tilemap.GetTilesBlock(mapBounds);
+        placedLocs = new bool[mapBounds.size.x, mapBounds.size.y];
 
         Object[] locs = Resources.LoadAll("Locations");
         foreach (Object loc in locs)
         {
+            Debug.Log(loc.name + "—охранена");
             BattleMapNames.Add(loc.name);
         }
         GenerateGrid();
@@ -43,7 +48,7 @@ public class GlobalMapGenerator : MonoBehaviour
                 foreach(string loc in mapSaver.save.LocationsData)
                 {
                     LocParams lpar = JsonUtility.FromJson<LocParams>(loc);
-                   GameObject location = Instantiate(Locations[0], lpar.LocPos, Quaternion.identity);
+                   GameObject location = Instantiate(Locations[lpar.LocTypeNum], lpar.LocPos, Quaternion.identity);
                    location.GetComponent<LocationController>().Params.locationComplite = lpar.locationComplite;
                    location.GetComponent<LocationController>().locNames = BattleMapNames;
                     LocationsInstanses.Add(location.GetComponent<LocationController>().Params);
@@ -62,6 +67,9 @@ public class GlobalMapGenerator : MonoBehaviour
         {
             float spawnChanse = 5;
             int currLocsCount = 0;
+            int curVillageCount = 0;
+            int curFortressCount = 0;
+
             while (currLocsCount < TargetLocationsCount)
             {
                 for (int x = 0; x < mapBounds.size.x; x++)
@@ -71,11 +79,24 @@ public class GlobalMapGenerator : MonoBehaviour
                         TileBase tile = allTiles[x + y * mapBounds.size.x];
                         if (tile != null && currLocsCount < TargetLocationsCount)
                         {
-                            if(Random.Range(0,100) <= spawnChanse)
+                            if(Random.Range(0,100) <= spawnChanse && !placedLocs[x,y])
                             {
-                                GameObject loc = Instantiate(Locations[0], new Vector3(x, y), Quaternion.identity);
+                                GameObject loc;
+                                if (curVillageCount < VillageCount)
+                                {
+                                     loc = Instantiate(Locations[0], new Vector3(x, y), Quaternion.identity);
+                                    curVillageCount++;
+                                    Debug.Log("—павним дерЄвню, курлокс равно = " + currLocsCount.ToString() + "а таргетлокс = " + TargetLocationsCount.ToString());
+                                }
+                                else
+                                {
+                                     loc = Instantiate(Locations[1], new Vector3(x, y), Quaternion.identity);
+                                    curFortressCount++;
+                                    Debug.Log("—павним крепость");
+                                }
                                 LocationsInstanses.Add(loc.GetComponent<LocationController>().Params);
                                 loc.GetComponent<LocationController>().locNames = BattleMapNames;
+                                placedLocs[x, y] = true;
                                 currLocsCount++;
                                 spawnChanse = 5;
                             }

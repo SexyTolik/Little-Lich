@@ -135,7 +135,7 @@ MonoBehaviour:
   AttackDelay: 0
   IsAttacking: 0
   Projectile: {fileID: 6533642679713563002, guid: 456797815c32ccc4db872a69d0c43cf2, type: 3}
-  ProjtileSpeed: 10
+  ProjtileSpeed: 6
   attakZone: {fileID: 2986261569287852457}
 --- !u!1 &6764923351426807591
 GameObject:
@@ -350,7 +350,7 @@ MonoBehaviour:
   autoRepath:
     mode: 2
     interval: 0.5
-    sensitivity: 10
+    sensitivity: 15
     maximumInterval: 2
     visualizeSensitivity: 0
   targetCompatibility: {fileID: 0}

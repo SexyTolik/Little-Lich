@@ -11,7 +11,7 @@ public class ProgressController : MonoBehaviour
     public bool CompanyInProgress = false;
     private string savePath;
 
-    public LocParams CurLoc;
+    public LocationController CurLoc;
 
     void Awake()
     {
@@ -40,8 +40,10 @@ public class ProgressController : MonoBehaviour
     
     public void MapComplite()
     {
-        CurLoc.locationComplite = true;
-        Debug.Log("Карта пройдена как" + CurLoc.locationComplite);
+        CurLoc.Params.locationComplite = true;
+        CurLoc._MapReward.GiveReward();
+
+        Debug.Log("Карта пройдена как" + CurLoc.Params.locationComplite);
         CampainTimerController.instance.SaveTime();
         GlobalMapSaver.instance.ResaveMap();
         Debug.Log("Пройденая карта записалась как " + GlobalMapSaver.instance.save.LocationsData);

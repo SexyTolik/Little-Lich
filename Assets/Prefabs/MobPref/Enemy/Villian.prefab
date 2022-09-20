@@ -300,7 +300,7 @@ MonoBehaviour:
   autoRepath:
     mode: 2
     interval: 0.5
-    sensitivity: 10
+    sensitivity: 15
     maximumInterval: 2
     visualizeSensitivity: 0
   targetCompatibility: {fileID: 0}

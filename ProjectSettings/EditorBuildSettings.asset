@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Locations/Village1.unity
     guid: 62d9f7cb538ef1f4ba70b8eddc516fb3
+  - enabled: 1
+    path: Assets/Resources/Locations/Fortress0.unity
+    guid: d6c1205e18733fe49afab1e06e58d4f9
   m_configObjects: {}
