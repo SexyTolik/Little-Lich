@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthTextDebug : MonoBehaviour
 {
-    private HeathBeh hb;
-    public TextMesh text;
+    private HeathBeh hp;
+    private Slider fillbar;
     void Start()
     {
-        hb = GetComponentInParent<HeathBeh>();
-        text = GetComponent<TextMesh>();
+        hp = GetComponentInParent<HeathBeh>();
+        fillbar = GetComponent<Slider>();
+        fillbar.maxValue = hp.MaxHealth;
+        fillbar.value = fillbar.maxValue;
     }
     void Update()
     {
-        text.text = hb.Health.ToString() + "hp";
+        fillbar.value = hp.Health;
     }
+
 }

@@ -14,17 +14,7 @@ public class Arrow : MonoBehaviour
         }
         if (collision.GetComponent<HeathBeh>() != null && (collision.CompareTag("Player") || collision.CompareTag("Friend")))
         {
-            Collider2D[] hitObj = Physics2D.OverlapCircleAll(transform.position, 1f);
-
-            foreach(Collider2D col in hitObj)
-            {
-                if(col.GetComponent<HeathBeh>() != null)
-                {
-                    if (col.CompareTag("Player")) { col.GetComponent<HeathBeh>().Health = Dmg;}
-                    else if (col.CompareTag("Friend")) { col.GetComponent<HeathBeh>().Health = Dmg; }
-                }
-            }
-            collision.GetComponent<Rigidbody2D>().AddForce(GetComponent<Rigidbody2D>().velocity, ForceMode2D.Impulse);
+            collision.GetComponent<HeathBeh>().Health = Dmg;
             Destroy(gameObject);
         }
 

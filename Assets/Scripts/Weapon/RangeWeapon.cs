@@ -7,18 +7,7 @@ public class RangeWeapon : Iweapon
     public GameObject Projectile;
     public float ProjtileSpeed = 6;
     private float DeleyToSpawnProjectile = 1f;
-    private IDirection dir;
-    private MobController controller;
-    private float ProjectileAnimationDeley = 1f;
     public RangeAttackZone attakZone;
-    // private SpriteRenderer spriteRenderer; 
-
-    void Start()
-    {
-        dir = GetComponentInParent<IDirection>();
-        controller = GetComponentInParent<MobController>();
-        // spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-    }
 
     public override void Attack() 
     {

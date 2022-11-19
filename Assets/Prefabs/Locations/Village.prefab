@@ -103,6 +103,7 @@ MonoBehaviour:
   DefeatIcon: {fileID: -1530529043, guid: 6b12ab30f889fc4498d696bf109d4649, type: 3}
   MinBuildIndex: 3
   MaxBuildIndex: 4
+  LocTypeInt: 0
 --- !u!61 &1556340539802182775
 BoxCollider2D:
   m_ObjectHideFlags: 0

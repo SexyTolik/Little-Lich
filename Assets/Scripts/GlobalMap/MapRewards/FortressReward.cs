@@ -7,7 +7,8 @@ public class FortressReward : MapReward
     public override void GiveReward()
     {
         Debug.Log("За прохождение локи получено " + MoneyReward + "деняг");
-        // вот тут получение денег
+        GlobalMapSaver.instance.save.Money += (int)MoneyReward;
+        GlobalMapSaver.instance.SaveMoney();
         Debug.Log("и вот предметы какие то на выбор(еще не закожено)");
     }
 }

@@ -15,12 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/GlobalMap.unity
     guid: b5d348f5b75f07546983a274cc553fb5
   - enabled: 1
-    path: Assets/Resources/Locations/Village0.unity
-    guid: f1063489f1251e14d809a7653076677a
+    path: Assets/Scenes/BattleMaps/Village0.unity
+    guid: d7e991a8a5160764486304b1e5761b77
+  - enabled: 0
+    path: Assets/Scenes/BattleMaps/Village1.unity
+    guid: 421a7906ffeae9948bf0ffd32f72f9b5
+  - enabled: 0
+    path: Assets/Scenes/BattleMaps/Village2.unity
+    guid: 315b6f9761a1c0a41a7cca06e2717eeb
   - enabled: 1
-    path: Assets/Resources/Locations/Village1.unity
-    guid: 62d9f7cb538ef1f4ba70b8eddc516fb3
+    path: Assets/Scenes/BattleMaps/Fort0.unity
+    guid: 00c8582d4dbdcc341851197b0ab38565
+  - enabled: 0
+    path: Assets/Scenes/BattleMaps/Fort1.unity
+    guid: a368c88d8f6d3fd43b2b1ed072331472
   - enabled: 1
-    path: Assets/Resources/Locations/Fortress0.unity
-    guid: d6c1205e18733fe49afab1e06e58d4f9
+    path: Assets/Scenes/BattleMaps/Castle.unity
+    guid: 46bf8da081a9cb747a9c8304a82ebd71
   m_configObjects: {}

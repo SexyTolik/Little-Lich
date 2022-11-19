@@ -27,6 +27,7 @@ public class GlobalMapSaver : MonoBehaviour
         path = Path.Combine(Application.dataPath, "Save.json");
 #endif
         loadMap();
+        CheckSelectedMobs();
     }
 
     public bool loadMap()
@@ -66,6 +67,58 @@ public class GlobalMapSaver : MonoBehaviour
         File.WriteAllText(path, JsonUtility.ToJson(save));
     }
 
+    public void SaveUpgrades(List<(string, int)> values)
+    {
+        save.UpgradesData.Clear();
+        foreach(var v in values)
+        {
+            save.UpgradesData.Add(JsonUtility.ToJson(v));
+        }
+        File.WriteAllText(path, JsonUtility.ToJson(save));
+    }
+
+    public List<(string,int)> LoadSavedUpgrades()
+    {
+        if (save.UpgradesData.Count == 0)
+        {
+            return null;
+        }
+        List<(string, int)> result = new List<(string, int)>();
+        foreach(var v in save.UpgradesData)
+        {
+            result.Add(JsonUtility.FromJson<(string,int)>(v));
+        }
+        return result;
+    }
+
+    public void SaveSelectedMobs((string,string) value)
+    {
+        string ConvertedValue = JsonUtility.ToJson(value);
+        save.SelectedMobs = ConvertedValue;
+        File.WriteAllText(path, JsonUtility.ToJson(save));
+    }
+
+    public void CheckSelectedMobs()
+    {
+        if (LoadSelectedMobs() == ("", "") || save.PastTime == 0f)
+        {
+            SaveSelectedMobs(("ZombieData", "ZombieData"));
+        }
+    }
+    public (string,string) LoadSelectedMobs()
+    {
+        return JsonUtility.FromJson<(string, string)>(save.SelectedMobs);
+    }
+
+    public void SaveMoney(int MoneyCount)
+    {
+        save.Money = MoneyCount;
+        File.WriteAllText(path, JsonUtility.ToJson(save));
+    }
+    public void SaveMoney()
+    {
+        File.WriteAllText(path, JsonUtility.ToJson(save));
+    }
     public void SetCompanyProgress(bool state)
     {
        save.CompanyInProgress = state;
@@ -90,8 +143,12 @@ public class GlobalMapSaver : MonoBehaviour
 [SerializeField]
 public class GameSave
 {
+    public string SelectedMobs = JsonUtility.ToJson(("",""));
     public List<LocParams> LocationsParametrs;
     public List<string> LocationsData;
+    public List<string> UpgradesData = new List<string>();
     public bool CompanyInProgress;
     public float PastTime;
+    public int Money;
+    
 }

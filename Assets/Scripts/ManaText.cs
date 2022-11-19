@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManaText : MonoBehaviour
 {
-    private ManaBeh mp;
-    public TextMesh text;
+    private ManaBeh mana;
+    private Slider fillbar;
     void Start()
     {
-        mp = GetComponentInParent<ManaBeh>();
-        text = GetComponent<TextMesh>();
+        mana = GameObject.Find("Player").GetComponentInParent<ManaBeh>();
+        fillbar = GetComponent<Slider>();
+        fillbar.maxValue = mana.MaxMana;
+        fillbar.value = fillbar.maxValue;
     }
     void Update()
     {
-        text.text = mp.mana.ToString() + "mp";
+        fillbar.value = mana.mana;
     }
 }

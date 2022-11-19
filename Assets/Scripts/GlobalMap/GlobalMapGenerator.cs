@@ -32,7 +32,7 @@ public class GlobalMapGenerator : MonoBehaviour
         Object[] locs = Resources.LoadAll("Locations");
         foreach (Object loc in locs)
         {
-            Debug.Log(loc.name + "Сохранена");
+           // Debug.Log(loc.name + "Сохранена");
             BattleMapNames.Add(loc.name);
         }
         GenerateGrid();
@@ -53,12 +53,12 @@ public class GlobalMapGenerator : MonoBehaviour
                    location.GetComponent<LocationController>().locNames = BattleMapNames;
                     LocationsInstanses.Add(location.GetComponent<LocationController>().Params);
                 }
-                Debug.Log("Карта загружена");
+               // Debug.Log("Карта загружена");
                 mapSaver.save.LocationsParametrs = LocationsInstanses;
             }
             else
             {
-                Debug.Log("Сохранение повреждено или отсутствует");
+               // Debug.Log("Сохранение повреждено или отсутствует");
                 mapSaver.SetCompanyProgress(false);
                 GenerateGrid();
             }
@@ -86,13 +86,13 @@ public class GlobalMapGenerator : MonoBehaviour
                                 {
                                      loc = Instantiate(Locations[0], new Vector3(x, y), Quaternion.identity);
                                     curVillageCount++;
-                                    Debug.Log("Спавним дерёвню, курлокс равно = " + currLocsCount.ToString() + "а таргетлокс = " + TargetLocationsCount.ToString());
+                                   // Debug.Log("Спавним дерёвню, курлокс равно = " + currLocsCount.ToString() + "а таргетлокс = " + TargetLocationsCount.ToString());
                                 }
                                 else
                                 {
                                      loc = Instantiate(Locations[1], new Vector3(x, y), Quaternion.identity);
                                     curFortressCount++;
-                                    Debug.Log("Спавним крепость");
+                                   // Debug.Log("Спавним крепость");
                                 }
                                 LocationsInstanses.Add(loc.GetComponent<LocationController>().Params);
                                 loc.GetComponent<LocationController>().locNames = BattleMapNames;

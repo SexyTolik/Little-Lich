@@ -7,6 +7,7 @@ public class TimerUI : MonoBehaviour
 {
     void Start()
     {
-        GetComponent<TextMeshProUGUI>().text = CampainTimerController.instance.PastTime.ToString();
+        int time = (int)CampainTimerController.instance.PastTime;
+        GetComponent<TextMeshProUGUI>().text = time.ToString() + "sec";
     }
 }

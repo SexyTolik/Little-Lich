@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 40093617, guid: 6b12ab30f889fc4498d696bf109d4649, type: 3}
+  m_Sprite: {fileID: 1101374960, guid: 6f6e874e4c895b7498f23d7869366b33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locNames: []
   LocParemetrs: 
-  DefeatIcon: {fileID: 920030425, guid: 6b12ab30f889fc4498d696bf109d4649, type: 3}
-  MinBuildIndex: 5
+  DefeatIcon: {fileID: -1116314921, guid: 6f6e874e4c895b7498f23d7869366b33, type: 3}
+  MinBuildIndex: 4
   MaxBuildIndex: 5
   LocTypeInt: 1
 --- !u!61 &1556340539802182775

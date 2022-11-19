@@ -32,7 +32,6 @@ public abstract class SpellBeh : MonoBehaviour
         if(spellButton != null)
         {
             spellButton.interactable = true;
-            Debug.Log("υσι");
         }
         
     }

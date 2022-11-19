@@ -29,9 +29,14 @@ public class LocationController : MonoBehaviour
         {
             case 0:
                 _MapReward = new VillageReward();
+                _MapReward.MoneyReward = Random.Range(100, 130);
                 break;
             case 1:
                 _MapReward = new FortressReward();
+                _MapReward.MoneyReward = Random.Range(120, 200);
+                break;
+            case 2:
+                _MapReward = new CastleReward();
                 break;
         }
     }
@@ -40,11 +45,9 @@ public class LocationController : MonoBehaviour
     {
         if (Params.locationComplite)
         {
-            Debug.Log("location " + transform.position + "Is complite");
+            //Debug.Log("location " + transform.position + "Is complite");
             gameObject.GetComponent<SpriteRenderer>().sprite = DefeatIcon;
         }
-
-
     }
     public void GoInLocation()
     {
@@ -53,11 +56,11 @@ public class LocationController : MonoBehaviour
             Debug.Log("Локация уже пройдена");
             return;
         }
-        Debug.Log("Go in loc сработал");
+        //Debug.Log("Go in loc сработал");
         ProgressController.instance.CurLoc = this;
         CampainTimerController.instance.MapIsRun = true;
         GameObject.Find("Canvas").GetComponent<LoadingScreenHandler>().LoadScreen.SetActive(true);
-        Debug.Log("текущая локация передала парамс в контроллер как " + ProgressController.instance.CurLoc.Params.locationComplite);
+        //Debug.Log("текущая локация передала парамс в контроллер как " + ProgressController.instance.CurLoc.Params.locationComplite);
         //SceneManager.LoadScene(locNames[Random.Range(0, locNames.Count)]);
         SceneManager.LoadScene(Random.Range(MinBuildIndex, MaxBuildIndex));
     }

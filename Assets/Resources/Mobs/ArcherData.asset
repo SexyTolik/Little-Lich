@@ -12,10 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca78722885f9ee4a807622da7457076, type: 3}
   m_Name: ArcherData
   m_EditorClassIdentifier: 
-  _AnimController: {fileID: 0}
+  _AnimController: {fileID: 9100000, guid: 6177f4fd8bdcf89479f917717c78780b, type: 2}
+  SpellButton1: {fileID: 0}
+  SpellButton2: {fileID: 0}
+  _MobPrefab: {fileID: 0}
   _MaxHealth: 5
   _Speed: 1
   _VisionRange: 10
   _AttakRange: 5
   _AttakDamage: 5
   _AttakDelay: 0.3
+  _CastDelay: 0
+  _CastCost: 0
+  _Description: 
+  _MobName: 
+  _mobLevel: 0

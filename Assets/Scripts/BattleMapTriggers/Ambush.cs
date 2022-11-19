@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Ambush : MonoBehaviour
 {
     public List<GameObject> Enemys = new List<GameObject>();
+    public List<int> SpawnWeight = new List<int>();
     public List<Transform> SpawnPoints = new List<Transform>();
     public int EnemysCount = 4;
 
@@ -23,7 +25,9 @@ public class Ambush : MonoBehaviour
         for (int i = 0; i < EnemysCount; i++)
         {
             Transform TempTransform = SpawnPoints[Random.Range(0, SpawnPoints.Capacity)];
-            GameObject Enemy = Instantiate(Enemys[Random.Range(0, Enemys.Capacity)], TempTransform.position,Quaternion.identity);
+            int RandNum = Random.Range(1, 100);
+
+           // SpawnWeight.OrderBy()
             yield return new WaitForSeconds(0.1f);
         }
     }

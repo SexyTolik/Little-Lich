@@ -113,6 +113,17 @@ public class MobController : MonoBehaviour
         AttakRange = data._AttakRange;
         AttakDamage = data._AttakDamage;
         AttakDelay = data._AttakDelay;
+        ApplyLevel();
+    }
+
+    public void ApplyLevel()
+    {
+        if (CurMob._MobLevel > 0)
+        {
+            float UpgradeFactor = 1.2f + ((0.15f * CurMob._MobLevel) - 0.15f);
+            MaxHealth = CurMob._MaxHealth * UpgradeFactor;
+            AttakDamage = CurMob._AttakDamage * UpgradeFactor;
+        }
     }
 
     private void OnDestroy()

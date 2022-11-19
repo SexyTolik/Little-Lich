@@ -17,5 +17,9 @@ public class DebugMenu : MonoBehaviour
     public void ResetCampainProg()
     {
         GlobalMapSaver.instance.SetCompanyProgress(false);
+        GlobalMapSaver.instance.save = new GameSave();
+        GlobalMapSaver.instance.SaveMoney();
+        GlobalMapSaver.instance.CheckSelectedMobs();
+        CampainTimerController.instance.LoadTime();
     }
 }

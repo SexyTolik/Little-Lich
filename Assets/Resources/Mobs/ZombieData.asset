@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: ZombieData
   m_EditorClassIdentifier: 
   _AnimController: {fileID: 9100000, guid: ff5149ec9a8d7b64a90f1928840086f3, type: 2}
+  SpellButton1: {fileID: -119405533, guid: 7c2923bf64a34f24daf376895ac98445, type: 3}
+  SpellButton2: {fileID: -134971832, guid: 7c2923bf64a34f24daf376895ac98445, type: 3}
+  _MobPrefab: {fileID: 1486922560742657746, guid: 007338c4a577bc04aa9da30c5ab0f881, type: 3}
   _MaxHealth: 20
   _Speed: 3.3
   _VisionRange: 4
   _AttakRange: 1
   _AttakDamage: 3
   _AttakDelay: 1
+  _CastDelay: 2.5
+  _CastCost: 5
+  _Description: Common dead zealot of the lich army
+  _MobName: Zombie
+  _mobLevel: 0
