@@ -1513,6 +1513,7 @@ MonoBehaviour:
   Enemys:
   - {fileID: 6764923351551935372, guid: 279dc71b2d46bd24a85d06f12c3bc3f5, type: 3}
   - {fileID: 979333058277359319, guid: 9f52a2fdbd9b93b449919870ef06f872, type: 3}
+  SpawnWeight: 1e00000064000000
   SpawnPoints:
   - {fileID: 1058385056}
   - {fileID: 312998752}

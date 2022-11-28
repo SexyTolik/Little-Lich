@@ -1103,6 +1103,7 @@ MonoBehaviour:
   - {fileID: 6764923351551935372, guid: 279dc71b2d46bd24a85d06f12c3bc3f5, type: 3}
   - {fileID: 979333058277359319, guid: 9f52a2fdbd9b93b449919870ef06f872, type: 3}
   - {fileID: 8001148099015241032, guid: cfdac36aa7727884dbc92bf6644acb34, type: 3}
+  SpawnWeight: 140000004600000064000000
   SpawnPoints:
   - {fileID: 1061753409}
   - {fileID: 1161059381}
@@ -1395,6 +1396,7 @@ MonoBehaviour:
   Enemys:
   - {fileID: 6764923351551935372, guid: 279dc71b2d46bd24a85d06f12c3bc3f5, type: 3}
   - {fileID: 979333058277359319, guid: 9f52a2fdbd9b93b449919870ef06f872, type: 3}
+  SpawnWeight: 
   SpawnPoints:
   - {fileID: 1439201467}
   - {fileID: 709184726}
@@ -10198,6 +10200,7 @@ MonoBehaviour:
   Enemys:
   - {fileID: 6764923351551935372, guid: 279dc71b2d46bd24a85d06f12c3bc3f5, type: 3}
   - {fileID: 979333058277359319, guid: 9f52a2fdbd9b93b449919870ef06f872, type: 3}
+  SpawnWeight: 3200000064000000
   SpawnPoints:
   - {fileID: 2082731445}
   - {fileID: 1940148618}
@@ -10581,6 +10584,7 @@ MonoBehaviour:
   Enemys:
   - {fileID: 6764923351551935372, guid: 279dc71b2d46bd24a85d06f12c3bc3f5, type: 3}
   - {fileID: 979333058277359319, guid: 9f52a2fdbd9b93b449919870ef06f872, type: 3}
+  SpawnWeight: 3200000064000000
   SpawnPoints:
   - {fileID: 120131548}
   - {fileID: 937323798}
@@ -10937,6 +10941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemys:
   - {fileID: 8195430090214450017, guid: 42a311a61c438d14c93362837b3f163b, type: 3}
+  SpawnWeight: 64000000
   SpawnPoints:
   - {fileID: 271127345}
   - {fileID: 1415281260}

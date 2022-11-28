@@ -31,7 +31,6 @@ public class BadGuyCounter : MonoBehaviour
         if (IsInfinityArena)
         {
             UnitSpawner.instance.TotalMobs--;
-            UnitSpawner.instance.score += Random.Range(1, 5);
         }
 
         if (IsBattleMap)

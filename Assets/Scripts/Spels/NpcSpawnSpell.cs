@@ -10,16 +10,17 @@ public class NpcSpawnSpell : SpellBeh
 
     private CircleCollider2D nearArea;
 
-  //  private bool canSpawn = true;
-
+    public bool IsArena = false;
     void Start()
     {
+        if (!IsArena)
+        {
         if(behOrder == 1) { mobName = GlobalMapSaver.instance.LoadSelectedMobs().Item1; } else { mobName = GlobalMapSaver.instance.LoadSelectedMobs().Item2; }
-        NpcPrefab = Resources.Load<MobData>("Mobs/" + mobName)._MobPrefab;
+           SelectMob(mobName);
+        }
         pMana = GetComponentInParent<ManaBeh>();
         nearArea = pMana.GetComponentInChildren<CircleCollider2D>();
-        SpellCastDelay = NpcPrefab.GetComponent<MobController>().CurMob._CastDelay;
-        spellCost = NpcPrefab.GetComponent<MobController>().CurMob._CastCost;
+
     }
     public override void CastSpell()
     {
@@ -27,7 +28,6 @@ public class NpcSpawnSpell : SpellBeh
         {
             if (pMana.TakeMana(spellCost))
             {
-             //   canSpawn = true;
                 castDelay = true;
                 Instantiate(NpcPrefab, transform.position, Quaternion.identity);
                 StartCoroutine(spellCastDelayTimer());
@@ -45,6 +45,13 @@ public class NpcSpawnSpell : SpellBeh
         {
             base.ButtonOff(button);
         }
-    } 
+    }
+    
+    public void SelectMob(string name)
+    {
+        NpcPrefab = Resources.Load<MobData>("Mobs/" + name)._MobPrefab;
+        SpellCastDelay = NpcPrefab.GetComponent<MobController>().CurMob._CastDelay;
+        spellCost = NpcPrefab.GetComponent<MobController>().CurMob._CastCost;
+    }
 
 }

@@ -12,8 +12,6 @@ public class UnitSpawner : MonoBehaviour
     public int TotalMobs;
     public int MaxMobs = 10;
 
-    public TextMeshProUGUI points;
-    public int score;
     void Start()
     {
         if(instance == null)
@@ -39,11 +37,6 @@ public class UnitSpawner : MonoBehaviour
             Instantiate(UnitPrefabs[Random.Range(0, UnitPrefabs.Count)], SpawnPoints[Random.Range(0,SpawnPoints.Count)].position, Quaternion.identity);
         }
        
-    }
-
-    public void Update()
-    {
-        points.text = "Score " + score.ToString();
     }
     IEnumerator SpawnMobs()
     {
