@@ -15,15 +15,20 @@ MonoBehaviour:
   _AnimController: {fileID: 9100000, guid: c1909b44bc3db624aab5384c41263962, type: 2}
   SpellButton1: {fileID: 264143306, guid: 7c2923bf64a34f24daf376895ac98445, type: 3}
   SpellButton2: {fileID: 1554611381, guid: 7c2923bf64a34f24daf376895ac98445, type: 3}
+  GraveBought: {fileID: -1416151144, guid: 56dd4da9406a4434b99cd73be0a6ad08, type: 3}
+  GraveUnbought: {fileID: 1011460986, guid: 56dd4da9406a4434b99cd73be0a6ad08, type: 3}
+  TokenImage: {fileID: 536224427, guid: 770874c9a4e220549af1a3995732ea54, type: 3}
   _MobPrefab: {fileID: 9160188550665510273, guid: b318faaae50e7f14c9bc8966568ae91d, type: 3}
-  _MaxHealth: 10
-  _Speed: 3.6
+  _MaxHealth: 14
+  _Speed: 7.2
   _VisionRange: 4
   _AttakRange: 1
   _AttakDamage: 9
   _AttakDelay: 0.5
   _CastDelay: 2
   _CastCost: 10
+  _Streanght: 0
+  _CorpceCost: 2
   _Description: Strong Fragile Dagger Master
   _MobName: Sceleton
   _mobLevel: 0

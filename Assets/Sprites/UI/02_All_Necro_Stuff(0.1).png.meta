@@ -1,0 +1,2876 @@
+fileFormatVersion: 2
+guid: 28db76a7e0ef74e468b9393af4a5b175
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 563
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd395181f9591c4b9c5e2f511403323
+      internalID: -521517969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 564
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f3d443064c80d4ca66dea228d0cc48
+      internalID: -360554809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 562
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff6740fa7fc20645b4832f4ab44bf4a
+      internalID: 1440590320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 544
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544d08f208da52a4b9837493ac44fe77
+      internalID: -1535754668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 544
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e0653cceb5c3e4e89d7f1332ab2e7a
+      internalID: 1022820175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 544
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94331b5b299d2fc44aa44650cbe5bbb8
+      internalID: -1833846033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_6
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 562
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0205256736eacbd4c9940f57649f396c
+      internalID: -1987197831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_7
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 497
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fc768d4111c54418a8e201cd7a1ae7
+      internalID: -46311974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_8
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 519
+        width: 82
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b3a83fb768d814aac511926b0606fa
+      internalID: -1314504790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_9
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 544
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c7874b9ee235a44af944d8963d13ea
+      internalID: -536679216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_10
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 544
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bacf49cddd5883468b956ff6e47671a
+      internalID: 995262063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 544
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cee6e259976ce46971bd077470773a
+      internalID: -205192108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_12
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 544
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19493455bd864a248b0c9c84ab6b3122
+      internalID: -18372412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_13
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 544
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6739edc2cee6843905cd8b199634e2
+      internalID: 1533718890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_14
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 544
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ac2e9f4d7f0e447b601674abd32f00
+      internalID: -1182789499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 512
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02fda9c4bc00c04699e301a2d6df73e
+      internalID: -1461911439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_16
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 512
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99df5205f6869724495c20cabf771ea8
+      internalID: 929903557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_17
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 512
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00368769ba279114fb37391a769ec3e2
+      internalID: 1664924983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_18
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 512
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7dcab6c6c137141a7ffc95957fb71f
+      internalID: 1860651978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_19
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 512
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595a67c7e8dd8ab479a0795b564baffd
+      internalID: -11003055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_20
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 512
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea98e5670f27b44987c983e08091ebc
+      internalID: -332052045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_27
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 453
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd414911b89fba4ea12f2e740443850
+      internalID: 1776987712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_28
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 408
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd901a157d754e44ea565f6610f1fb84
+      internalID: -1963937063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_29
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 416
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5b53f891bb13d40bbedc954651f1a9
+      internalID: 1212724705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 480
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd19e81ba8419bf4fb8c78ff6d9b7d06
+      internalID: 2068686686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_31
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 448
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d91d71f30f6c6847abf6c679bb5b74b
+      internalID: 694816620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_32
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 416
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42c763d69a2d70478139ffa34ba760e
+      internalID: -2028358664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_33
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 480
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c559049cbb728d74bb4b3a634b15c623
+      internalID: 1446267492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_34
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 448
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9fae603fa5a0a45bc25ecdf96aaf80
+      internalID: 1489916299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_35
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 448
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d5a0267d781f24d9ca95285a2ec2de
+      internalID: 1927713924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_36
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 480
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801d5d64201d31e499f39702f15a3f04
+      internalID: 1060604192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_37
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 480
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7797c4f348f882c40af2bcc20497a843
+      internalID: 718409543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_38
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 448
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071faf43c207fb34f91c6543fc2815bb
+      internalID: -1598697832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_39
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 480
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e01e53c87c482409534efb89ad0fef
+      internalID: -1788963670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_40
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 448
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1cc2a4319763749b8c8f8917690264
+      internalID: -376976839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_41
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 387
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c0ccb6f46eae3478f1b60f71db2ab8
+      internalID: 591296557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_42
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 480
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af32072b1ab604c4dae5adf562af6e24
+      internalID: 64629812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_43
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 448
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ecd17cc1852374684c4e7205fff133
+      internalID: 180911729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_44
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 436
+        width: 80
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef389a63b5d26b64fa357a6dada703c2
+      internalID: -362317340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 415
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec70be6148b92eb43a8fa6562be7845e
+      internalID: -2070033433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_70
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 384
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b6cc2846f056a4eab7d2919562cfdf
+      internalID: -1393714412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_71
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 384
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec2a600dbac0b34c800575764695160
+      internalID: -1773543805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_72
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 402
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cbbd72ffa8e9b4881f2bcd37e2e33e
+      internalID: 1957185822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_73
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 402
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49de1c210d1892642af6a586088aead3
+      internalID: 789810734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_74
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 402
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba5a6c540c57464d9204fef92679a1d
+      internalID: -1433293065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_78
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 360
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fca4bdb2e49ba4da01429c9c9be48b
+      internalID: 1048948650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_79
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7690386ee95b3bf4e80cc76169b70fb4
+      internalID: 824941365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_80
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 386
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b306c60b81f18543b081ba53c7e04e5
+      internalID: -1625032406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_81
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 386
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec2192d94d45a14789a161847989afa
+      internalID: -1208768260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_82
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 386
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a351ece852dc742877528e9f39515a
+      internalID: 443335256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_87
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 352
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc13ae182ede39f4d8fa10fccf863284
+      internalID: 946038886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_88
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 352
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d94f9071b1a9774b9eaa9d6f160ad39
+      internalID: 7620809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_89
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 370
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20fb9fb068b24940a60be19c147385c
+      internalID: 1645812141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_90
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 370
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2799a9928d39843b96f2b7359602ee
+      internalID: 361916983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_91
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 370
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ab7de6ecd215246a7c7eacdaf4bd4e
+      internalID: 1750056602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_96
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 312
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7d5cd309fe7ba4283ae0c1e7409531
+      internalID: 262792661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadWindow
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 252
+        width: 157
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe88d0a596eeb18459e81b6ffd51c18e
+      internalID: -1966108236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_98
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 208
+        width: 70
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c070d712bc91224ea643ce867659553
+      internalID: 365031522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_99
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 208
+        width: 98
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f208263f75ce24fa2b775634fa0320
+      internalID: -1284114795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_100
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 228
+        width: 106
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd4fbe9aec198b438671621e233ffb8
+      internalID: -1086382208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_101
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 208
+        width: 106
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50721bb229c1382418124888e1fc6f45
+      internalID: -612597344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_102
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe20ae1a47d098478952fd9b33dcce4
+      internalID: -151701429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_103
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb2b2cad0aa9ee48937e9fefea5dd18
+      internalID: 1884858300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_104
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd9f3ad24da0844ca2d555e20ba7981
+      internalID: -420670329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_105
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4e77ad64abfba4c89d980092dfe1de
+      internalID: 333592416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_106
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde452b3a5597ee4ea5fda5352ac084c
+      internalID: 231283760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_107
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85766ff4f27892d47bcc58d1d8047bd2
+      internalID: 1136102433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArenaBut
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 188
+        width: 106
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03733f136f3e0b4ca0f7e7546ce4a3a
+      internalID: 1569564989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_109
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aee8d769ecbd844b984753398fa5cb0
+      internalID: -1113150155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac68b32c76b9e9d4b92dfdc84a58a431
+      internalID: 1728121622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartWaveBut
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 168
+        width: 106
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f58bb4142a77d4e8083cec63723b23
+      internalID: 931617966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_112
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df23ac2f23aaa449ac06cadc2e38cd4
+      internalID: 62013681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e981b96c770cd564ca60be0f0f0531f2
+      internalID: 1822119469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cca82722a970a7409e1dc0a3620a91a
+      internalID: -1122220661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_115
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04576c947805514283ce33ec94236bd
+      internalID: -2110813085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_116
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7e89d1c147b6b4283c2a9b4729607d
+      internalID: -1144701848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_117
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42d5fb74dbbc6d4687faaa2b3ae0481
+      internalID: -653056125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_118
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdb2fb7e6099334683e6f15f1548776
+      internalID: -1459635783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_119
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 93
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac743a1f9ba9f9449d4faacc3bd6657
+      internalID: 447764668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_120
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 93
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8de66152782d64e9a1bc6868a5bb8b
+      internalID: -2106201205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_121
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 93
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d57c8c74de8b8649b327ebf877309d0
+      internalID: -209853830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_122
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 93
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfbda372e31a724bb5a49b9bae8dba1
+      internalID: -838504719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_123
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 93
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25d77e6e8a21094bb540d0c8c73e6a8
+      internalID: -1007477835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_124
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 93
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d221d87c08ca7c647b12635c56a5efea
+      internalID: -1247218433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_125
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 51
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a71dd2584227fb4a87d6f525a227382
+      internalID: 815400754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_126
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 29
+        width: 74
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e82c80450dda604ea80d08c3fe989b6
+      internalID: -1806868226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_127
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 28
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2571d73fde0c9a041b84afa6804b0348
+      internalID: 1415885610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_128
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 86
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fded21152efa7644795d00a076534dda
+      internalID: -1629155579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_129
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 61
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3196e33fe9590bc4a8ebc0ec5c971ee4
+      internalID: -1438625258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_130
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 61
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0d2fe7273b0be4ea1aaf994c0ac07f
+      internalID: -647731150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_131
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 61
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f930fd5b4166b40a5882a1e766f443
+      internalID: 176018562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_132
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 61
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab1b0f14bd629544a4ba8a298a52eb2
+      internalID: 663323772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_133
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 61
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2eaff0d522bf44a939d9f3eb02be25
+      internalID: -277581922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_134
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 61
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b379dd4975e3d47b92e2a7b91ae5ad
+      internalID: -1475463179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_135
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 85
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8212688932e824ebc40e6a43ba43c7
+      internalID: -1961776177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_136
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 85
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2c1bd91811ac2499e650c4597800fb
+      internalID: -160182275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_137
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 69
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88276ceaaa5009489da424f8a0bc2bc
+      internalID: -309455540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_138
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 69
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378f77c8470d3354d9631a082c9a7372
+      internalID: -1388326448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_139
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 25
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7b7269b548d5c44b82bbeb577e4e5c
+      internalID: -13472719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_140
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 25
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c16ac760d5b554389591eef7806191
+      internalID: -687377943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_141
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 25
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1907390a68ac1f44280cb32ac7255ce8
+      internalID: -1022585851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_142
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 25
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d8609851f612f4ea110153ab44b51f
+      internalID: -656876200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_143
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 25
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a174a887828e041acb88cc4b899093
+      internalID: 1333333951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_144
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 25
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d929b2b2766f2b44a7a07c6c3953337
+      internalID: -489554566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_145
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 10
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a253f755d30fc44788779deb2a3862e
+      internalID: 986546796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_146
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 53
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890e45f245606f2469ce9da6903a843e
+      internalID: -841665173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_147
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 38
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417c4dfcb58238742ab0a27af16ed08c
+      internalID: 1711281570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_148
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 15
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a7e6b96249cdc4c8ce0190fd3894b2
+      internalID: 2092268607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_149
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a07d9a95d5ca840a3e4655c61e4c6f
+      internalID: 808775986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_150
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 4
+        width: 50
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2157649a00fd2a4eb5d4d9b08783341
+      internalID: 1110597822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_151
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 8
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45523577c62bc174897be23250f163b1
+      internalID: 1202013269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_152
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55777f7245c3e7d4d97026815e32a65f
+      internalID: 665095113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_153
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a80d99b47d85b4db2c943077559a6a
+      internalID: -194619929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_154
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602f18ba14ec797489c8c0485a838fd5
+      internalID: -1297971398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_155
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e930d319ad9849a4fb019bb310721c55
+      internalID: -518961418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_156
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6d93e73a4711048936035edadfd081
+      internalID: 1879708054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_157
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 7
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bbaa8ab9bca1243bf47a0141090b04
+      internalID: -317578695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_158
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb934dfda1f9cc4dadaf90569ede457
+      internalID: 422195740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_159
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 7
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54dbc8433ecf434b91714eb5f7c48bf
+      internalID: -22628594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_All_Necro_Stuff(0.1)_160
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 7
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad68e09235633e48bd020ab17956d17
+      internalID: -1326921558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestartBut
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 280
+        width: 141
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dcd9d8b07673540b6f49e1cd6458d0
+      internalID: -299939071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuBut
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 258
+        width: 141
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7764733cd98c56b4388d7f531e01f947
+      internalID: -144809064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      02_All_Necro_Stuff(0.1)_0: -521517969
+      02_All_Necro_Stuff(0.1)_146: -841665173
+      StartWaveBut: 931617966
+      02_All_Necro_Stuff(0.1)_14: -1182789499
+      02_All_Necro_Stuff(0.1)_87: 946038886
+      02_All_Necro_Stuff(0.1)_33: 1446267492
+      ArenaBut: 1569564989
+      02_All_Necro_Stuff(0.1)_101: -612597344
+      02_All_Necro_Stuff(0.1)_122: -838504719
+      02_All_Necro_Stuff(0.1)_32: -2028358664
+      02_All_Necro_Stuff(0.1)_68: -337560568
+      02_All_Necro_Stuff(0.1)_165: 266136883
+      02_All_Necro_Stuff(0.1)_26: 1425610007
+      02_All_Necro_Stuff(0.1)_85: 1019906430
+      02_All_Necro_Stuff(0.1)_76: 401006344
+      02_All_Necro_Stuff(0.1)_107: 1136102433
+      02_All_Necro_Stuff(0.1)_95: 1519572159
+      02_All_Necro_Stuff(0.1)_147: 1711281570
+      02_All_Necro_Stuff(0.1)_27: 1776987712
+      02_All_Necro_Stuff(0.1)_80: -1625032406
+      02_All_Necro_Stuff(0.1)_103: 1884858300
+      02_All_Necro_Stuff(0.1)_79: 824941365
+      02_All_Necro_Stuff(0.1)_141: -1022585851
+      02_All_Necro_Stuff(0.1)_29: 1212724705
+      02_All_Necro_Stuff(0.1)_10: 995262063
+      02_All_Necro_Stuff(0.1)_98: 365031522
+      02_All_Necro_Stuff(0.1)_104: -420670329
+      02_All_Necro_Stuff(0.1)_115: -2110813085
+      02_All_Necro_Stuff(0.1)_148: 2092268607
+      02_All_Necro_Stuff(0.1)_132: 663323772
+      02_All_Necro_Stuff(0.1)_13: 1533718890
+      02_All_Necro_Stuff(0.1)_17: 1664924983
+      02_All_Necro_Stuff(0.1)_155: -518961418
+      02_All_Necro_Stuff(0.1)_149: 808775986
+      02_All_Necro_Stuff(0.1)_93: -931607881
+      02_All_Necro_Stuff(0.1)_19: -11003055
+      02_All_Necro_Stuff(0.1)_69: -1112962736
+      02_All_Necro_Stuff(0.1)_43: 180911729
+      02_All_Necro_Stuff(0.1)_34: 1489916299
+      02_All_Necro_Stuff(0.1)_102: -151701429
+      02_All_Necro_Stuff(0.1)_120: -2106201205
+      02_All_Necro_Stuff(0.1)_114: -1122220661
+      02_All_Necro_Stuff(0.1)_55: 1534017203
+      02_All_Necro_Stuff(0.1)_119: 447764668
+      02_All_Necro_Stuff(0.1)_128: -1629155579
+      02_All_Necro_Stuff(0.1)_67: 1175360842
+      02_All_Necro_Stuff(0.1)_150: 1110597822
+      02_All_Necro_Stuff(0.1)_36: 1060604192
+      02_All_Necro_Stuff(0.1)_133: -277581922
+      02_All_Necro_Stuff(0.1)_56: 2002761801
+      02_All_Necro_Stuff(0.1)_123: -1007477835
+      02_All_Necro_Stuff(0.1)_138: -1388326448
+      02_All_Necro_Stuff(0.1)_113: 1822119469
+      02_All_Necro_Stuff(0.1)_153: -194619929
+      02_All_Necro_Stuff(0.1)_60: 813142162
+      02_All_Necro_Stuff(0.1)_66: -2070033433
+      02_All_Necro_Stuff(0.1)_112: 62013681
+      02_All_Necro_Stuff(0.1)_37: 718409543
+      02_All_Necro_Stuff(0.1)_157: -317578695
+      02_All_Necro_Stuff(0.1)_151: 1202013269
+      02_All_Necro_Stuff(0.1)_139: -13472719
+      02_All_Necro_Stuff(0.1)_145: 986546796
+      02_All_Necro_Stuff(0.1)_73: 789810734
+      02_All_Necro_Stuff(0.1)_134: -1475463179
+      02_All_Necro_Stuff(0.1)_41: 591296557
+      02_All_Necro_Stuff(0.1)_50: 1766380349
+      02_All_Necro_Stuff(0.1)_90: 361916983
+      02_All_Necro_Stuff(0.1)_40: -376976839
+      02_All_Necro_Stuff(0.1)_109: -1113150155
+      02_All_Necro_Stuff(0.1)_135: -1961776177
+      02_All_Necro_Stuff(0.1)_57: 496180032
+      02_All_Necro_Stuff(0.1)_2: 1440590320
+      02_All_Necro_Stuff(0.1)_94: 256208223
+      02_All_Necro_Stuff(0.1)_127: 1415885610
+      02_All_Necro_Stuff(0.1)_9: -536679216
+      02_All_Necro_Stuff(0.1)_140: -687377943
+      02_All_Necro_Stuff(0.1)_152: 665095113
+      02_All_Necro_Stuff(0.1)_38: -1598697832
+      02_All_Necro_Stuff(0.1)_72: 1957185822
+      02_All_Necro_Stuff(0.1)_137: -309455540
+      02_All_Necro_Stuff(0.1)_166: 1232517438
+      02_All_Necro_Stuff(0.1)_144: -489554566
+      02_All_Necro_Stuff(0.1)_31: 694816620
+      02_All_Necro_Stuff(0.1)_58: -686507982
+      02_All_Necro_Stuff(0.1)_35: 1927713924
+      02_All_Necro_Stuff(0.1)_52: 1233355088
+      02_All_Necro_Stuff(0.1)_77: 171009739
+      02_All_Necro_Stuff(0.1)_163: 1929848438
+      02_All_Necro_Stuff(0.1)_1: -360554809
+      02_All_Necro_Stuff(0.1)_131: 176018562
+      02_All_Necro_Stuff(0.1)_51: -62962662
+      02_All_Necro_Stuff(0.1)_88: 7620809
+      02_All_Necro_Stuff(0.1)_117: -653056125
+      02_All_Necro_Stuff(0.1)_91: 1750056602
+      02_All_Necro_Stuff(0.1)_86: -753348352
+      02_All_Necro_Stuff(0.1)_99: -1284114795
+      02_All_Necro_Stuff(0.1)_6: -1987197831
+      02_All_Necro_Stuff(0.1)_18: 1860651978
+      02_All_Necro_Stuff(0.1)_49: 697757043
+      02_All_Necro_Stuff(0.1)_100: -1086382208
+      02_All_Necro_Stuff(0.1)_83: 1539856273
+      02_All_Necro_Stuff(0.1)_142: -656876200
+      02_All_Necro_Stuff(0.1)_84: 1028811693
+      02_All_Necro_Stuff(0.1)_116: -1144701848
+      MenuBut: -1348911978
+      02_All_Necro_Stuff(0.1)_20: -332052045
+      02_All_Necro_Stuff(0.1)_15: -1461911439
+      02_All_Necro_Stuff(0.1)_164: -1787329198
+      02_All_Necro_Stuff(0.1)_78: 1048948650
+      02_All_Necro_Stuff(0.1)_65: 1550270840
+      02_All_Necro_Stuff(0.1)_59: -608094681
+      02_All_Necro_Stuff(0.1)_11: -205192108
+      02_All_Necro_Stuff(0.1)_161: -1829402002
+      02_All_Necro_Stuff(0.1)_71: -1773543805
+      02_All_Necro_Stuff(0.1)_167: 1345564470
+      02_All_Necro_Stuff(0.1)_8: -1314504790
+      02_All_Necro_Stuff(0.1)_39: -1788963670
+      02_All_Necro_Stuff(0.1)_46: -1705173752
+      02_All_Necro_Stuff(0.1)_82: 443335256
+      02_All_Necro_Stuff(0.1)_89: 1645812141
+      02_All_Necro_Stuff(0.1)_110: 1728121622
+      02_All_Necro_Stuff(0.1)_5: -1833846033
+      02_All_Necro_Stuff(0.1)_45: -1666156237
+      02_All_Necro_Stuff(0.1)_48: 1159109002
+      02_All_Necro_Stuff(0.1)_143: 1333333951
+      02_All_Necro_Stuff(0.1)_54: 901499450
+      02_All_Necro_Stuff(0.1)_62: -885419299
+      02_All_Necro_Stuff(0.1)_30: 2068686686
+      02_All_Necro_Stuff(0.1)_96: 262792661
+      02_All_Necro_Stuff(0.1)_63: 361356213
+      02_All_Necro_Stuff(0.1)_24: 1727648868
+      02_All_Necro_Stuff(0.1)_28: -1963937063
+      02_All_Necro_Stuff(0.1)_61: -1177014131
+      02_All_Necro_Stuff(0.1)_44: -362317340
+      02_All_Necro_Stuff(0.1)_64: -767206179
+      02_All_Necro_Stuff(0.1)_75: -1830351503
+      02_All_Necro_Stuff(0.1)_162: 996683129
+      02_All_Necro_Stuff(0.1)_42: 64629812
+      02_All_Necro_Stuff(0.1)_105: 333592416
+      02_All_Necro_Stuff(0.1)_70: -1393714412
+      02_All_Necro_Stuff(0.1)_126: -1806868226
+      RestartBut: -2102643469
+      02_All_Necro_Stuff(0.1)_156: 1879708054
+      02_All_Necro_Stuff(0.1)_125: 815400754
+      02_All_Necro_Stuff(0.1)_92: -1768645408
+      02_All_Necro_Stuff(0.1)_130: -647731150
+      02_All_Necro_Stuff(0.1)_3: -1535754668
+      02_All_Necro_Stuff(0.1)_81: -1208768260
+      02_All_Necro_Stuff(0.1)_118: -1459635783
+      02_All_Necro_Stuff(0.1)_160: -1326921558
+      02_All_Necro_Stuff(0.1)_129: -1438625258
+      02_All_Necro_Stuff(0.1)_124: -1247218433
+      02_All_Necro_Stuff(0.1)_154: -1297971398
+      02_All_Necro_Stuff(0.1)_47: 1768009977
+      02_All_Necro_Stuff(0.1)_53: 1424097496
+      02_All_Necro_Stuff(0.1)_159: -22628594
+      02_All_Necro_Stuff(0.1)_12: -18372412
+      02_All_Necro_Stuff(0.1)_23: 807359519
+      02_All_Necro_Stuff(0.1)_16: 929903557
+      02_All_Necro_Stuff(0.1)_158: 422195740
+      02_All_Necro_Stuff(0.1)_7: -46311974
+      02_All_Necro_Stuff(0.1)_4: 1022820175
+      02_All_Necro_Stuff(0.1)_74: -1433293065
+      DeadWindow: -1966108236
+      02_All_Necro_Stuff(0.1)_121: -209853830
+      02_All_Necro_Stuff(0.1)_106: 231283760
+      02_All_Necro_Stuff(0.1)_136: -160182275
+      02_All_Necro_Stuff(0.1)_25: -1595215982
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

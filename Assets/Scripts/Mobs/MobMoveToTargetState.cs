@@ -30,7 +30,7 @@ public class MobMoveToTargetState : BaseMobState
     private ContactFilter2D filter = new ContactFilter2D();
     public override void Entry()
     {
-        controller.Aipath.canMove = true;
+        controller.Aipath.IsMoving = true;
         targ = controller.Target;
         setter.target = null;
         setter.target = targ.transform;

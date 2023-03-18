@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using System;
 
 public class GoodGuyCounter : MonoBehaviour
 {
@@ -9,7 +11,10 @@ public class GoodGuyCounter : MonoBehaviour
     public int TotalFriends;
     public int MaxFriends = 5;
 
-    public TextMeshProUGUI text;
+    //private List<DebugMobCounter> CurMobs = new List<DebugMobCounter>();
+    private DebugMobCounter[] CurMobs;
+    public List<Image> TokensImages = new List<Image>();
+    public Sprite EmptyTokenSprite;
     void Start()
     {
         if (instance == null)
@@ -20,11 +25,31 @@ public class GoodGuyCounter : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        CurMobs = new DebugMobCounter[MaxFriends];
     }
 
-    private void Update()
+    public void AddMobToken(DebugMobCounter tic)
     {
-        text.text = TotalFriends.ToString() + "/" + MaxFriends.ToString();
+        TokensImages[PutMobIn(tic)].sprite = tic.MobToken;
     }
 
+    public void RemoveMobToken(DebugMobCounter tok)
+    {
+        int mobIndex = Array.IndexOf(CurMobs, tok);
+        TokensImages[mobIndex].sprite = EmptyTokenSprite;
+        CurMobs[mobIndex] = null;
+    }
+
+    private int PutMobIn(DebugMobCounter mob)
+    {
+        for(int i = 0; i < CurMobs.Length; i++)
+        {
+            if (CurMobs[i] == null)
+            {
+                CurMobs[i] = mob;
+                return i;
+            }
+        }
+        return 0;
+    }
 }

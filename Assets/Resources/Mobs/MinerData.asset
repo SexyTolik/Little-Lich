@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: MinerData
   m_EditorClassIdentifier: 
   _AnimController: {fileID: 9100000, guid: d82cbdc786f066b40b8feb104d9bee6d, type: 2}
+  SpellButton1: {fileID: 0}
+  SpellButton2: {fileID: 0}
+  GraveBought: {fileID: 0}
+  GraveUnbought: {fileID: 0}
+  _MobPrefab: {fileID: 8001148099015241032, guid: cfdac36aa7727884dbc92bf6644acb34, type: 3}
   _MaxHealth: 15
-  _Speed: 0.7
+  _Speed: 2
   _VisionRange: 8
   _AttakRange: 1
   _AttakDamage: 8
   _AttakDelay: 1
+  _CastDelay: 0
+  _CastCost: 0
+  _Streanght: 1
+  _CorpceCost: 0
+  _Description: 
+  _MobName: 
+  _mobLevel: 0

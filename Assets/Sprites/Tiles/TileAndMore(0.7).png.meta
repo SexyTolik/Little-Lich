@@ -8179,6 +8179,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Gate1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f0c8fef59e4fd4cac26c1f84319965
+      internalID: -475007588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174f65d483418244791e1fae626644aa
+      internalID: -477672840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decab7193d8c2d84e979029cf1872576
+      internalID: 261794691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16870066dc873f943a3e5e927bb23ff1
+      internalID: -795486320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -8250,6 +8334,7 @@ TextureImporter:
       TileAndMore(0.7)_378: 1070266710
       TileAndMore(0.7)_232: 2142530974
       TileAndMore(0.7)_144: -1224405625
+      Gate3: 261794691
       TileAndMore(0.7)_18: -243555515
       TileAndMore(0.7)_320: -1166456718
       TileAndMore(0.7)_282: 219290337
@@ -8285,7 +8370,6 @@ TextureImporter:
       TileAndMore(0.7)_72: -1681148933
       TileAndMore(0.7)_77: -716944992
       TileAndMore(0.7)_1: -53119116
-      TileAndMore(0.7)_205: -848604801
       TileAndMore(0.7)_306: -1970168836
       TileAndMore(0.7)_280: 1384261009
       TileAndMore(0.7)_25: 665619200
@@ -8293,6 +8377,7 @@ TextureImporter:
       TileAndMore(0.7)_288: -163698765
       TileAndMore(0.7)_130: -364718926
       TileAndMore(0.7)_209: 1527462123
+      TileAndMore(0.7)_205: -848604801
       TileAndMore(0.7)_43: -10454669
       TileAndMore(0.7)_379: -1521462905
       TileAndMore(0.7)_75: 2024575488
@@ -8343,6 +8428,7 @@ TextureImporter:
       TileAndMore(0.7)_228: -1379425882
       TileAndMore(0.7)_316: 293954037
       TileAndMore(0.7)_247: -1809288774
+      Gate1: 2126928580
       TileAndMore(0.7)_369: 423340765
       TileAndMore(0.7)_127: -1750632384
       TileAndMore(0.7)_82: -970527662
@@ -8406,7 +8492,6 @@ TextureImporter:
       TileAndMore(0.7)_38: -79386079
       TileAndMore(0.7)_15: 375568739
       TileAndMore(0.7)_346: 704087683
-      TileAndMore(0.7)_0: 2126928580
       TileAndMore(0.7)_380: 1974082077
       TileAndMore(0.7)_97: -172201026
       TileAndMore(0.7)_163: -1331755575
@@ -8537,6 +8622,7 @@ TextureImporter:
       TileAndMore(0.7)_332: 539223970
       TileAndMore(0.7)_135: -351741103
       TileAndMore(0.7)_275: 800811376
+      Gate2: -477672840
       TileAndMore(0.7)_262: -2108131199
       TileAndMore(0.7)_295: 1223395250
       TileAndMore(0.7)_353: -146688936
@@ -8562,6 +8648,7 @@ TextureImporter:
       TileAndMore(0.7)_341: -217455164
       TileAndMore(0.7)_119: 1981013227
       TileAndMore(0.7)_342: -2128332532
+      Gate4: -795486320
       TileAndMore(0.7)_89: 1506003544
       TileAndMore(0.7)_314: -2102866715
       TileAndMore(0.7)_160: 1329937482

@@ -6,6 +6,8 @@ public class BadGuyCounter : MonoBehaviour
 {
     bool IsInfinityArena = false;
     bool IsBattleMap = false;
+
+    bool IsAlreadyDead = false;
     private void Start()
     {
         if(UnitSpawner.instance != null)
@@ -20,24 +22,31 @@ public class BadGuyCounter : MonoBehaviour
 
         if (IsInfinityArena)
         {
-            UnitSpawner.instance.TotalMobs++;
+           // UnitSpawner.instance.TotalMobs++;
         }
 
     }
 
-    void OnDestroy()
+    public void IamDead()
     {
         if (!this.gameObject.scene.isLoaded) return;
         if (IsInfinityArena)
         {
-            UnitSpawner.instance.TotalMobs--;
+            UnitSpawner.instance.EnemyAlive--;
         }
 
         if (IsBattleMap)
         {
             KillEnemyCount.instance.AddKill();
         }
-
-
+        IsAlreadyDead= true;
+    }
+    void OnDestroy()
+    {
+        if(!IsAlreadyDead)
+        {
+            IamDead();
+        }
+        
     }
 }

@@ -15,15 +15,19 @@ MonoBehaviour:
   _AnimController: {fileID: 9100000, guid: d82cbdc786f066b40b8feb104d9bee6d, type: 2}
   SpellButton1: {fileID: 0}
   SpellButton2: {fileID: 0}
-  _MobPrefab: {fileID: 0}
+  GraveBought: {fileID: 0}
+  GraveUnbought: {fileID: 0}
+  _MobPrefab: {fileID: 8195430090214450017, guid: 42a311a61c438d14c93362837b3f163b, type: 3}
   _MaxHealth: 23
-  _Speed: 1
+  _Speed: 2
   _VisionRange: 8
   _AttakRange: 1
   _AttakDamage: 11
   _AttakDelay: 1
   _CastDelay: 0
   _CastCost: 0
+  _Streanght: 3
+  _CorpceCost: 0
   _Description: 
   _MobName: 
   _mobLevel: 0

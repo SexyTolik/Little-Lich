@@ -15,15 +15,20 @@ MonoBehaviour:
   _AnimController: {fileID: 9100000, guid: 82228df334ed121458062c96ac6f996c, type: 2}
   SpellButton1: {fileID: -1464248126, guid: 7c2923bf64a34f24daf376895ac98445, type: 3}
   SpellButton2: {fileID: -596420575, guid: 7c2923bf64a34f24daf376895ac98445, type: 3}
+  GraveBought: {fileID: 1740961682, guid: 56dd4da9406a4434b99cd73be0a6ad08, type: 3}
+  GraveUnbought: {fileID: 1614643715, guid: 56dd4da9406a4434b99cd73be0a6ad08, type: 3}
+  TokenImage: {fileID: -320590895, guid: 770874c9a4e220549af1a3995732ea54, type: 3}
   _MobPrefab: {fileID: 3456719853103143809, guid: 54576e743276d2a4abd908b1070362cb, type: 3}
   _MaxHealth: 80
-  _Speed: 3
+  _Speed: 2
   _VisionRange: 4
   _AttakRange: 1
   _AttakDamage: 15
   _AttakDelay: 0.5
   _CastDelay: 5
   _CastCost: 17
+  _Streanght: 0
+  _CorpceCost: 3
   _Description: Huge monster with monstrous power
   _MobName: Ghoul
   _mobLevel: 0

@@ -11,7 +11,7 @@ public class MaxScoreOnThisScene : MonoBehaviour
     {
         text = GetComponent<TextMeshProUGUI>();
         Scene cScene = SceneManager.GetActiveScene();
-        text.text = "MaxScore " + ScoreSaver.instance.ShowScore(cScene.name);
+        //text.text = "MaxScore " + ScoreSaver.instance.ShowScore(cScene.name);
     }
     
 }

@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dir: {fileID: 0}
-  discardingForce: 200
+  discardingForce: 8
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -375,13 +375,13 @@ GameObject:
   - component: {fileID: 8195430090214450019}
   - component: {fileID: 8195430090214450031}
   - component: {fileID: 8195430090214450030}
-  - component: {fileID: 8195430090214450029}
   - component: {fileID: 8195430090214450024}
   - component: {fileID: 8195430090214450025}
   - component: {fileID: 8195430090214450026}
   - component: {fileID: 8195430090214450027}
   - component: {fileID: 8195430090214450036}
   - component: {fileID: 5717608674165571694}
+  - component: {fileID: -1080241372377429447}
   m_Layer: 7
   m_Name: Brigadier
   m_TagString: Enemy
@@ -421,8 +421,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 50
-  m_LinearDrag: 50
+  m_Mass: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0.1
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -498,48 +498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!114 &8195430090214450029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8195430090214450017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
-  radius: 0.5
-  height: 0.01
-  canMove: 1
-  maxSpeed: 1
-  gravity: {x: NaN, y: NaN, z: NaN}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  centerOffsetCompatibility: NaN
-  repathRateCompatibility: NaN
-  canSearchCompability: 0
-  orientation: 1
-  enableRotation: 0
-  autoRepath:
-    mode: 2
-    interval: 0.5
-    sensitivity: 15
-    maximumInterval: 2
-    visualizeSensitivity: 0
-  targetCompatibility: {fileID: 0}
-  maxAcceleration: -2.5
-  rotationSpeed: 360
-  slowdownDistance: 1
-  pickNextWaypointDist: 0.1
-  endReachedDistance: 0.4
-  alwaysDrawGizmos: 0
-  slowWhenNotFacingTarget: 0
-  whenCloseToDestination: 0
-  constrainInsideGraph: 0
 --- !u!114 &8195430090214450024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,6 +512,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pointer: {fileID: 8195430089014349572}
   CurMob: {fileID: 11400000, guid: 34bd7961ffc8339418bebc589da9e377, type: 2}
+  DiedGhost: {fileID: 4359801251224069276, guid: 6f6f375e0644fc640b517569b479077a, type: 3}
+  DiedExpl: {fileID: 7403919100561740340, guid: a653834971b2b5c478b88f6bd6377b7a, type: 3}
   AnimController: {fileID: 0}
   MaxHealth: 0
   Speed: 0
@@ -562,12 +522,12 @@ MonoBehaviour:
   AttakDamage: 0
   AttakDelay: 0
   Setter: {fileID: 0}
-  Aipath: {fileID: 0}
   currWeaphon: {fileID: 0}
   MovePatrolZone: {fileID: 0}
   Target: {fileID: 0}
   RandomMoveChangePointTime: 3
   Enemy: 0
+  HaveSoul: 1
 --- !u!95 &8195430090214450025
 Animator:
   serializedVersion: 4
@@ -602,6 +562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 0
   health: 0
+  TargetGraphics: {fileID: 8195430089019073177}
 --- !u!114 &8195430090214450027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,6 +601,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b705113e155743f43a55739b56ef9cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1080241372377429447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8195430090214450017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d11343baca65e4eb6fe266afcce6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RayDistance: 1
+  TargerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  rayCount: 6
+  speed: 2
+  Rb: {fileID: 0}
+  MoveDelay: 1
+  canMove: 1
 --- !u!1 &8195430090397587402
 GameObject:
   m_ObjectHideFlags: 0

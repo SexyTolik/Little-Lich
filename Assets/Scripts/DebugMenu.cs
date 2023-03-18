@@ -6,7 +6,7 @@ public class DebugMenu : MonoBehaviour
 {
     public void ChangeScene(int sceneNum)
     {
-        SceneManager.LoadScene(sceneNum);
+        StartCoroutine(SceneLoad(sceneNum));
     }
 
     public void RestartScene()
@@ -21,5 +21,15 @@ public class DebugMenu : MonoBehaviour
         GlobalMapSaver.instance.SaveMoney();
         GlobalMapSaver.instance.CheckSelectedMobs();
         CampainTimerController.instance.LoadTime();
+    }
+
+    private IEnumerator SceneLoad(int sceneNum)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneNum);
+
+        while (!operation.isDone)
+        {
+            yield return null;
+        }
     }
 }

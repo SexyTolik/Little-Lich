@@ -15,6 +15,10 @@ public class DeathBall : MonoBehaviour
             Instantiate(ExpEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         } */
+        if(collision.CompareTag("Player"))
+        {
+            Physics2D.IgnoreCollision(collision,gameObject.GetComponent<Collider2D>());
+        }
         if(gameObject.GetComponent<Collider2D>().IsTouchingLayers(LayerMask.GetMask("Obstacls")) || collision.GetComponent<HeathBeh>() != null && (collision.CompareTag("Enemy") || collision.CompareTag("Friend")))
         {
             Collider2D[] hitObj = Physics2D.OverlapCircleAll(transform.position, ExpRadius);

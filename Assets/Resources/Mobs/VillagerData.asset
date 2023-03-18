@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: VillagerData
   m_EditorClassIdentifier: 
   _AnimController: {fileID: 9100000, guid: 0c407fa4e3cc1cb4ebaa37a3d9bd18a5, type: 2}
+  SpellButton1: {fileID: 0}
+  SpellButton2: {fileID: 0}
+  GraveBought: {fileID: 0}
+  GraveUnbought: {fileID: 0}
+  _MobPrefab: {fileID: 7349288978164977550, guid: 76ff606747c596643bcbb398e667f60c, type: 3}
   _MaxHealth: 10
-  _Speed: 1
+  _Speed: 2.6
   _VisionRange: 8
   _AttakRange: 1
   _AttakDamage: 5
   _AttakDelay: 0.8
+  _CastDelay: 0
+  _CastCost: 0
+  _Streanght: 0
+  _CorpceCost: 0
+  _Description: 
+  _MobName: 
+  _mobLevel: 0

@@ -10,14 +10,14 @@ public class MobRandomMoveState : BaseMobState
     private CircleCollider2D movezone;
     private GameObject pointer;
     private MobController controller;
-    private AIPath iPath;
+    private IsMoveble iPath;
 
     private ContactFilter2D filter = new ContactFilter2D();
     private Collider2D[] overlaps = new Collider2D[1];
     private RaycastHit2D hit2D;
 
     private Coroutine timer;
-    public MobRandomMoveState(AIDestinationSetter _setter, CircleCollider2D _movezone, GameObject _pointer, MobController _controller, AIPath aIPath)
+    public MobRandomMoveState(AIDestinationSetter _setter, CircleCollider2D _movezone, GameObject _pointer, MobController _controller, IsMoveble aIPath)
     {
         setter = _setter;
         movezone = _movezone;
@@ -44,7 +44,7 @@ public class MobRandomMoveState : BaseMobState
     }
     private void ChoceRandPoint()
     {
-        if(!iPath.canMove) { controller.Aipath.canMove = true; }
+        if(!iPath.IsMoving) { controller.Aipath.IsMoving = true; }
         setter.target = randomPointInBounds();
     }
     private Transform randomPointInBounds()
@@ -64,7 +64,7 @@ public class MobRandomMoveState : BaseMobState
             controller.ChangeCurrState<MobMoveToTargetState>();
         }
 
-        hit2D = Physics2D.Raycast(controller.transform.position, iPath.steeringTarget - controller.transform.position, 1f,LayerMask.GetMask("Obstacls"));
+        hit2D = Physics2D.Raycast(controller.transform.position, iPath.SteeringTarget - controller.transform.position, 1f,LayerMask.GetMask("Obstacls"));
         if(hit2D)
         {
          //   setter.target = controller.transform;

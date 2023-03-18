@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class ScoreSaver : MonoBehaviour
 {
     public static ScoreSaver instance = null;
+    public ScoreSave save = new ScoreSave();
+    private string path;
 
     void Start()
     {
@@ -17,14 +20,49 @@ public class ScoreSaver : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+
+#if !UNITY_EDITOR
+        path = Path.Combine(Application.persistentDataPath, "ScoreSave.json");
+#else
+        path = Path.Combine(Application.dataPath, "ScoreSave.json");
+    #endif
+    loadScore();
+}
+
+    public void SaveScore(int score)
+    {
+        save.Score = score;
+        File.WriteAllText(path, JsonUtility.ToJson(save));
+    }
+    public int ShowScore()
+    {
+        if (loadScore())
+        {
+            return save.Score;
+        }
+        else
+        {
+            return 0;
+        }
+        
     }
 
-    public void SaveScore(int num, string location)
+    public bool loadScore()
     {
-        PlayerPrefs.SetInt(location, num);
+        if (File.Exists(path))
+        {
+            save = JsonUtility.FromJson<ScoreSave>(File.ReadAllText(path));
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    public int ShowScore(string location)
-    {
-      return PlayerPrefs.GetInt(location);
-    }
+}
+
+[SerializeField]
+public class ScoreSave
+{
+    public int Score;
 }

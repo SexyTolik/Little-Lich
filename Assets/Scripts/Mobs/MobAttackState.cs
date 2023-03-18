@@ -28,7 +28,7 @@ public class MobAttackState : BaseMobState
     public override void Entry()
     {
         controller.Setter.target = null;
-        controller.Aipath.canMove = false;
+        controller.Aipath.IsMoving = false;
 
     }
     public override void UpdateLogic()
@@ -62,7 +62,7 @@ public class MobAttackState : BaseMobState
 
     public override void Exit()
     {
-        controller.Aipath.canMove = true;
+        controller.Aipath.IsMoving = true;
         IsAttack = false;
     }
 

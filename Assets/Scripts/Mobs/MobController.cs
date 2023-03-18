@@ -6,12 +6,11 @@ using Pathfinding;
 
 public class MobController : MonoBehaviour
 {
-    [Header("���� ��������������� � �������")]
 
     public GameObject Pointer;
     public MobData CurMob;
+    public GameObject DiedGhost, DiedExpl;
 
-    [Header("�������� ��������� �� Data �����")]
     public RuntimeAnimatorController AnimController;
     public float MaxHealth;
     public float Speed;
@@ -20,15 +19,14 @@ public class MobController : MonoBehaviour
     public float AttakDamage;
     public float AttakDelay;
 
-    [Header("���� ��������������� � ��������")]
     public AIDestinationSetter Setter;
-    public AIPath Aipath;
+    public IsMoveble Aipath;
     public Iweapon currWeaphon;
     public CircleCollider2D MovePatrolZone;
     public GameObject Target;
     public float RandomMoveChangePointTime = 3f;
     public bool Enemy;
-
+    public bool HaveSoul = true;
 
 
     private BaseMobState currState;
@@ -44,6 +42,7 @@ public class MobController : MonoBehaviour
         stateMap[typeof(MobRandomMoveState)] = new MobRandomMoveState(Setter,MovePatrolZone,Pointer,this, Aipath);
         stateMap[typeof(MobMoveToTargetState)] = new MobMoveToTargetState(Target, Setter, this);
         stateMap[typeof(MobAttackState)] = new MobAttackState(this);
+        stateMap[typeof(MobDeathState)] = new MobDeathState(this);
 
     }
     private BaseMobState getState<T>() where T : BaseMobState
@@ -56,9 +55,9 @@ public class MobController : MonoBehaviour
     {
         LoadMob(CurMob);
         GetComponent<HeathBeh>().MaxHealth = MaxHealth;
-        GetComponent<AIPath>().maxSpeed = Speed;
         Setter = GetComponent<AIDestinationSetter>();
-        Aipath = GetComponent<AIPath>();
+        Aipath = GetComponent<IsMoveble>();
+        Aipath.Speed = Speed;
         currWeaphon = GetComponentInChildren<Iweapon>();
         currWeaphon.Dmg = AttakDamage;
         currWeaphon.AttackDelay = AttakDelay;        
@@ -72,10 +71,8 @@ public class MobController : MonoBehaviour
             Enemy = false;
             MovePatrolZone = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<CircleCollider2D>();
         }
-
         initializeStateMap();
         InitializeState<MobRandomMoveState>();
-
     }
     public void ChangeCurrState<T>() where T : BaseMobState
     {
@@ -126,8 +123,13 @@ public class MobController : MonoBehaviour
         }
     }
 
+    public void DesentigrateMobController()
+    {
+        Destroy(gameObject);
+    }
     private void OnDestroy()
     {
+        Instantiate(DiedExpl, transform.position, Quaternion.identity);
         Destroy(Pointer);
     }
 
@@ -138,4 +140,6 @@ public class MobController : MonoBehaviour
             Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
         }
     }
+
+    
 }

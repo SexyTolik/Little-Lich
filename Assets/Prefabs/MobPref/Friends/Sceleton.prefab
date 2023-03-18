@@ -205,7 +205,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1663701965, guid: f19b7c75da9b67549a8fab8c8bdc4d4a, type: 3}
+  m_Sprite: {fileID: -1501508869, guid: 831e2d7363124d844bbda94a76604e2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dir: {fileID: 0}
-  discardingForce: 200
+  discardingForce: 1
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -761,7 +761,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 6161627879209552326, guid: 23b4955115063f440b388e4075f31e8d, type: 3}
+  m_Sprite: {fileID: 1013842309, guid: 3e3f50ddf608822488c3c4137f691a0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -845,7 +845,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 392641248757704034, guid: 23b4955115063f440b388e4075f31e8d, type: 3}
+  m_Sprite: {fileID: 1177117672, guid: 3e3f50ddf608822488c3c4137f691a0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -937,13 +937,13 @@ GameObject:
   - component: {fileID: 1892378555528679495}
   - component: {fileID: 4845242989178614479}
   - component: {fileID: 3022048757955233278}
-  - component: {fileID: 2680124330448180985}
   - component: {fileID: 4309079355681570271}
   - component: {fileID: 2815488566630847888}
   - component: {fileID: 585646178191023932}
   - component: {fileID: 6023787415917347889}
   - component: {fileID: 4208423780444467156}
   - component: {fileID: 4445316652959175736}
+  - component: {fileID: 7268876153786217316}
   m_Layer: 6
   m_Name: Sceleton
   m_TagString: Friend
@@ -984,8 +984,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 50
-  m_LinearDrag: 50
+  m_Mass: 1
+  m_LinearDrag: 1
   m_AngularDrag: 0.1
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -1006,7 +1006,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: -0.13}
+  m_Offset: {x: -0.0032501817, y: -0.11396201}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1017,7 +1017,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26, y: 0.21}
+  m_Size: {x: 0.37349963, y: 0.3950537}
   m_EdgeRadius: 0
 --- !u!114 &4845242989178614479
 MonoBehaviour:
@@ -1061,48 +1061,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!114 &2680124330448180985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9160188550665510273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
-  radius: 0.5
-  height: 0.01
-  canMove: 1
-  maxSpeed: 1
-  gravity: {x: NaN, y: NaN, z: NaN}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  centerOffsetCompatibility: NaN
-  repathRateCompatibility: NaN
-  canSearchCompability: 0
-  orientation: 1
-  enableRotation: 0
-  autoRepath:
-    mode: 2
-    interval: 0.5
-    sensitivity: 10
-    maximumInterval: 2
-    visualizeSensitivity: 0
-  targetCompatibility: {fileID: 0}
-  maxAcceleration: -2.5
-  rotationSpeed: 360
-  slowdownDistance: 1
-  pickNextWaypointDist: 0.1
-  endReachedDistance: 0.4
-  alwaysDrawGizmos: 0
-  slowWhenNotFacingTarget: 0
-  whenCloseToDestination: 0
-  constrainInsideGraph: 0
 --- !u!114 &4309079355681570271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,6 +1075,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pointer: {fileID: 8004722196813058179}
   CurMob: {fileID: 11400000, guid: 9905d958faa18bb478cab4336d498fc2, type: 2}
+  DiedGhost: {fileID: 4359801251224069276, guid: 6f6f375e0644fc640b517569b479077a, type: 3}
+  DiedExpl: {fileID: 7403919100561740340, guid: a653834971b2b5c478b88f6bd6377b7a, type: 3}
   AnimController: {fileID: 0}
   MaxHealth: 0
   Speed: 0
@@ -1125,12 +1085,12 @@ MonoBehaviour:
   AttakDamage: 0
   AttakDelay: 0
   Setter: {fileID: 0}
-  Aipath: {fileID: 0}
   currWeaphon: {fileID: 0}
   MovePatrolZone: {fileID: 0}
   Target: {fileID: 0}
   RandomMoveChangePointTime: 0.5
   Enemy: 1
+  HaveSoul: 0
 --- !u!95 &2815488566630847888
 Animator:
   serializedVersion: 4
@@ -1165,7 +1125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 0
   health: 0
-  test: {fileID: 0}
+  TargetGraphics: {fileID: 4148388323190127841}
 --- !u!114 &6023787415917347889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1204,3 +1164,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba11f71f862a7d49a298bff4c4a7efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7268876153786217316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9160188550665510273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d11343baca65e4eb6fe266afcce6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RayDistance: 1
+  TargerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  rayCount: 6
+  speed: 2
+  Rb: {fileID: 0}
+  MoveDelay: 1
+  canMove: 1

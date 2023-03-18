@@ -3,7 +3,16 @@ guid: f733ca2c8c66dc648b28e27feb3bec0a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Pointer: {instanceID: 0}
+  - CurMob: {instanceID: 0}
+  - DiedGhost: {fileID: 7348236872205562042, guid: 611dc566c8effff40b7df84cb1ff93f5, type: 3}
+  - DiedExpl: {fileID: 7403919100561740340, guid: a653834971b2b5c478b88f6bd6377b7a, type: 3}
+  - AnimController: {instanceID: 0}
+  - Setter: {instanceID: 0}
+  - currWeaphon: {instanceID: 0}
+  - MovePatrolZone: {instanceID: 0}
+  - Target: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

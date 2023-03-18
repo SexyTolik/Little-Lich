@@ -5,12 +5,13 @@ using UnityEngine;
 public class ArenaStartGame : MonoBehaviour
 {
     public GameObject SpawnController;
-    public GameObject MobChoiceWindow;
+    public GameObject MobChoiceWindow, background;
 
     public void CloseChoiceWindow()
     {
         SpawnController.SetActive(true);
         MobChoiceWindow.SetActive(false);
+        background.SetActive(false);
     }
 
 
