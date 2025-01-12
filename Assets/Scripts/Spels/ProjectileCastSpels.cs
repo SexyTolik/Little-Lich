@@ -23,7 +23,7 @@ public class ProjectileCastSpels : SpellBeh
                 castDelay = true;
                 GameObject proj = Instantiate(Projectile, transform.position, transform.rotation);
                 proj.transform.right = dir.lastDir;
-                proj.GetComponent<Rigidbody2D>().velocity = dir.lastDir.normalized * ProjtileSpeed;
+                proj.GetComponent<Rigidbody2D>().linearVelocity = dir.lastDir.normalized * ProjtileSpeed;
                 StartCoroutine(spellCastDelayTimer());
             }
         }

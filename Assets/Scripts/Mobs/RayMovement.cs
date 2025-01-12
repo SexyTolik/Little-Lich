@@ -12,7 +12,7 @@ public class RayMovement : MonoBehaviour, IsMoveble
     public int rayCount = 8;
     private float segmentSize;
 
-    // Ниже переменные для передвижения
+    // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public float speed = 2f;
     public float Speed { get => speed; set => speed = value; }
     public Rigidbody2D Rb;
@@ -92,7 +92,7 @@ public class RayMovement : MonoBehaviour, IsMoveble
                     if ((targ.position - (Vector3)ray.Hit.point).magnitude < (targ.position - (Vector3)curDir.Hit.point).magnitude)
                     {
                         curDir = ray;
-                        Debug.Log("Пиздец");
+                        Debug.Log("пїЅпїЅпїЅпїЅпїЅпїЅ");
                     }
                 }
             }
@@ -110,7 +110,7 @@ public class RayMovement : MonoBehaviour, IsMoveble
 
     public void GoNahui()
     {
-        Rb.velocity = SelectDir(setter.target) * speed;
+        Rb.linearVelocity = SelectDir(setter.target) * speed;
     }
 }
 

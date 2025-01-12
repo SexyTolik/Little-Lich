@@ -42,7 +42,7 @@ public class RangeAttackZone : AttakZoneController
             float angle = Mathf.Atan2(nearestCol.transform.position.y - transform.position.y, nearestCol.transform.position.x - transform.position.x) * Mathf.Rad2Deg;
             GameObject proj = Instantiate(curWeaphon.Projectile, transform.position, Quaternion.AngleAxis(angle,Vector3.forward));
             //proj.transform.rotation = Quaternion.Euler(projectileDirection);
-            proj.GetComponent<Rigidbody2D>().velocity = projectileDirection.normalized * curWeaphon.ProjtileSpeed;
+            proj.GetComponent<Rigidbody2D>().linearVelocity = projectileDirection.normalized * curWeaphon.ProjtileSpeed;
         }        
     }
 
