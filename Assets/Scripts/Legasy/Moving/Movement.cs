@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D),typeof(IDirection))]
 public class Movement : MonoBehaviour
 {
     private IDirection Dir;
