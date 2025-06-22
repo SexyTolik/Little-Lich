@@ -32,5 +32,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BattleMaps/Castle.unity
     guid: 46bf8da081a9cb747a9c8304a82ebd71
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: f3a6eac5cb6328f48b4d36b898ee8bbd, type: 3}
   m_UseUCBPForAssetBundles: 0
