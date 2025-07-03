@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-//TODO: добавить инпуты основной и второстепенной атаки. добавить метод получения направления атаки
+
 public class WeaponManager : MonoBehaviour
 {
     [SerializeField] private WeaponData currentWeapon;
@@ -8,24 +8,36 @@ public class WeaponManager : MonoBehaviour
     private float secondaryCooldown = 0f;
 
     private PlayerInputActions actionMap;
-    private InputAction attackAction;
+    private InputAction primaryAttackAction;
+    private InputAction secondaryAttackAction;
+    private InputAction LookAction;
 
     void Awake()
     {
         actionMap = new PlayerInputActions();
-        attackAction = actionMap.Player.Fire;
-        attackAction.Enable();
-
+        primaryAttackAction = actionMap.Player.PrimaryAttak;
+        secondaryAttackAction = actionMap.Player.SecondaryAttak;
+        LookAction = actionMap.Player.Look;
+        LookAction.Enable();
+        primaryAttackAction.Enable();
+        secondaryAttackAction.Enable();
+        primaryAttackAction.performed += PrymaryAttack;
+        secondaryAttackAction.performed += SecondaryAttack;
 
     }
 
-    private void PrymaryAttack()
+    private void PrymaryAttack(InputAction.CallbackContext context)
     {
-
+        currentWeapon.PrimaryAttack.PerformAttack(transform,GetLookDirection());
     }
 
-    private void SecondaryAttack()
+    private void SecondaryAttack(InputAction.CallbackContext context)
     {
-        
+        currentWeapon.SecondaryAttack.PerformAttack(transform,GetLookDirection());
+    }
+
+    public Vector2 GetLookDirection()
+    {
+        return LookAction.ReadValue<Vector2>();
     }
 }

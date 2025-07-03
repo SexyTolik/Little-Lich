@@ -110,9 +110,36 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Fire"",
+                    ""name"": ""PrimaryAttak"",
                     ""type"": ""Button"",
                     ""id"": ""787122ae-41f3-46d4-9ba2-dd57fb785918"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SecondaryAttak"",
+                    ""type"": ""Button"",
+                    ""id"": ""6533f44b-acd0-45af-9b8b-d5a3c0b0d74b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CastSpel1"",
+                    ""type"": ""Button"",
+                    ""id"": ""36f497b2-7810-41d4-aef2-7ff93ebf265d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CastSpel2"",
+                    ""type"": ""Button"",
+                    ""id"": ""4d20bdcf-f834-4ced-844d-48766e265b05"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -276,23 +303,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""3e5f5442-8668-4b27-a940-df99bad7e831"",
-                    ""path"": ""<Joystick>/{Hatswitch}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""143bb1cd-cc10-4eca-a2f0-a3664166fe91"",
                     ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Fire"",
+                    ""action"": ""PrimaryAttak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -303,40 +319,73 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Fire"",
+                    ""action"": ""PrimaryAttak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""886e731e-7071-4ae4-95c0-e61739dad6fd"",
-                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
+                    ""id"": ""2a71a353-517c-4ba5-b5fc-19d32d430786"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Touch"",
-                    ""action"": ""Fire"",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""SecondaryAttak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ee3d0cd2-254e-47a7-a8cb-bc94d9658c54"",
-                    ""path"": ""<Joystick>/trigger"",
+                    ""id"": ""2e877df5-bff9-4006-b8e8-6107a9e97061"",
+                    ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""Fire"",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SecondaryAttak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8255d333-5683-4943-a58a-ccb207ff1dce"",
-                    ""path"": ""<XRController>/{PrimaryAction}"",
+                    ""id"": ""02e9d214-89b0-4cfa-ae7b-5d3239fce2b1"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""XR"",
-                    ""action"": ""Fire"",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""CastSpel1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1055d557-6cc1-4f06-ad82-ca9e544671de"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""CastSpel1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9bd55de1-dc02-425e-9d20-f53cb40069a2"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""CastSpel2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5bc171ed-a0ff-444e-848d-a82e8c9326e7"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""CastSpel2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -926,7 +975,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
-        m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
+        m_Player_PrimaryAttak = m_Player.FindAction("PrimaryAttak", throwIfNotFound: true);
+        m_Player_SecondaryAttak = m_Player.FindAction("SecondaryAttak", throwIfNotFound: true);
+        m_Player_CastSpel1 = m_Player.FindAction("CastSpel1", throwIfNotFound: true);
+        m_Player_CastSpel2 = m_Player.FindAction("CastSpel2", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1022,7 +1074,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Look;
-    private readonly InputAction m_Player_Fire;
+    private readonly InputAction m_Player_PrimaryAttak;
+    private readonly InputAction m_Player_SecondaryAttak;
+    private readonly InputAction m_Player_CastSpel1;
+    private readonly InputAction m_Player_CastSpel2;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1043,9 +1098,21 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Look => m_Wrapper.m_Player_Look;
         /// <summary>
-        /// Provides access to the underlying input action "Player/Fire".
+        /// Provides access to the underlying input action "Player/PrimaryAttak".
         /// </summary>
-        public InputAction @Fire => m_Wrapper.m_Player_Fire;
+        public InputAction @PrimaryAttak => m_Wrapper.m_Player_PrimaryAttak;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/SecondaryAttak".
+        /// </summary>
+        public InputAction @SecondaryAttak => m_Wrapper.m_Player_SecondaryAttak;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/CastSpel1".
+        /// </summary>
+        public InputAction @CastSpel1 => m_Wrapper.m_Player_CastSpel1;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/CastSpel2".
+        /// </summary>
+        public InputAction @CastSpel2 => m_Wrapper.m_Player_CastSpel2;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1078,9 +1145,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
-            @Fire.started += instance.OnFire;
-            @Fire.performed += instance.OnFire;
-            @Fire.canceled += instance.OnFire;
+            @PrimaryAttak.started += instance.OnPrimaryAttak;
+            @PrimaryAttak.performed += instance.OnPrimaryAttak;
+            @PrimaryAttak.canceled += instance.OnPrimaryAttak;
+            @SecondaryAttak.started += instance.OnSecondaryAttak;
+            @SecondaryAttak.performed += instance.OnSecondaryAttak;
+            @SecondaryAttak.canceled += instance.OnSecondaryAttak;
+            @CastSpel1.started += instance.OnCastSpel1;
+            @CastSpel1.performed += instance.OnCastSpel1;
+            @CastSpel1.canceled += instance.OnCastSpel1;
+            @CastSpel2.started += instance.OnCastSpel2;
+            @CastSpel2.performed += instance.OnCastSpel2;
+            @CastSpel2.canceled += instance.OnCastSpel2;
         }
 
         /// <summary>
@@ -1098,9 +1174,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
-            @Fire.started -= instance.OnFire;
-            @Fire.performed -= instance.OnFire;
-            @Fire.canceled -= instance.OnFire;
+            @PrimaryAttak.started -= instance.OnPrimaryAttak;
+            @PrimaryAttak.performed -= instance.OnPrimaryAttak;
+            @PrimaryAttak.canceled -= instance.OnPrimaryAttak;
+            @SecondaryAttak.started -= instance.OnSecondaryAttak;
+            @SecondaryAttak.performed -= instance.OnSecondaryAttak;
+            @SecondaryAttak.canceled -= instance.OnSecondaryAttak;
+            @CastSpel1.started -= instance.OnCastSpel1;
+            @CastSpel1.performed -= instance.OnCastSpel1;
+            @CastSpel1.canceled -= instance.OnCastSpel1;
+            @CastSpel2.started -= instance.OnCastSpel2;
+            @CastSpel2.performed -= instance.OnCastSpel2;
+            @CastSpel2.canceled -= instance.OnCastSpel2;
         }
 
         /// <summary>
@@ -1416,12 +1501,33 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnLook(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Fire" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "PrimaryAttak" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnFire(InputAction.CallbackContext context);
+        void OnPrimaryAttak(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SecondaryAttak" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSecondaryAttak(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "CastSpel1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnCastSpel1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "CastSpel2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnCastSpel2(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
