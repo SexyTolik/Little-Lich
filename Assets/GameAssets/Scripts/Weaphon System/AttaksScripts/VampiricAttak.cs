@@ -1,5 +1,5 @@
 using UnityEngine;
-[CreateAssetMenu(fileName = "VampiricAttak", menuName = "Attack/VampiricAttak")]
+[CreateAssetMenu(fileName = "VampiricAttak", menuName = "Attacks/VampiricAttak")]
 public class VampiricAttak : AttackBase
 {
     public AttackBase BaseAttack;

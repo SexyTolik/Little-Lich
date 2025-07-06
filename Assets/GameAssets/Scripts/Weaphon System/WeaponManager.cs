@@ -28,12 +28,22 @@ public class WeaponManager : MonoBehaviour
 
     private void PrymaryAttack(InputAction.CallbackContext context)
     {
-        currentWeapon.PrimaryAttack.PerformAttack(transform,GetLookDirection());
+        if (primaryCooldown < Time.time)
+        {
+            currentWeapon.PrimaryAttack.PerformAttack(transform, GetLookDirection());
+            primaryCooldown = Time.time + currentWeapon.PrimaryAttack.Cooldown;
+        }
+        
     }
 
     private void SecondaryAttack(InputAction.CallbackContext context)
     {
-        currentWeapon.SecondaryAttack.PerformAttack(transform,GetLookDirection());
+        if (secondaryCooldown < Time.time)
+        {
+            currentWeapon.SecondaryAttack.PerformAttack(transform,GetLookDirection());
+            secondaryCooldown = Time.time + currentWeapon.SecondaryAttack.Cooldown;
+        }
+        
     }
 
     public Vector2 GetLookDirection()

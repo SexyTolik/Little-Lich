@@ -6,5 +6,5 @@ public class WeaponData : ScriptableObject
     public string WeaponName;
     public AttackBase PrimaryAttack;
     public AttackBase SecondaryAttack;
-    public IPassiveEffect[] PassiveEffects;
+    public PassiveEffectBase[] PassiveEffects;
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class PassiveEffectsManager : MonoBehaviour
 {
-    private List<IPassiveEffect> activeEffects = new List<IPassiveEffect>();
+    private List<PassiveEffectBase> activeEffects = new List<PassiveEffectBase>();
 
     public void EquipWeapon(WeaponData weapon)
     {
